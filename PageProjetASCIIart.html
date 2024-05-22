@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> &mdash;Yanis MERIEM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+	
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- Pour mon css a moi -->
+    <link rel="stylesheet" href="css/Yanis.css">
+
+	</head>
+	<body>
+	<div class="fh5co-loader"></div>
+	<div id="page">
+
+		<!-- PARTI POUR LE MENU DU SITE -->
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<!-- <div id="fh5co-logo"><a href="index.html">Shape<span>.</span></a></div> -->
+				</div>
+				<div class="col-xs-12 text-center menu-1">
+					<ul>
+						<li"><a href="index.html">Accueil</a></li> <!-- ON EST SUR CETTE PAGE -->
+						<li class="has-dropdown active">
+							<!-- ICI projet est une liste deroulante -->
+							<a href="PageProjet.html">Mes Projets</a>
+							<ul class="dropdown">
+								<li><a href="PageProjetASCIIart.html">Convertisseur en ASCII art</a></li>
+								<li><a href="PageProjetJeuxVideo.html">Création d'un jeu vidéo</a></li>
+								<li><a href="PageProjetComparaisonAlgo.html">Comparaison d'approche algorithmique</a></li>
+							</ul>
+						</li>
+						<li><a href="PageMaFormation.html">Ma formation</a></li>
+						<li><a href="PageAboutMe.html">A propos de moi </a></li>
+						<li><a href="PageContact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- TITRE  -->
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeInUp">
+							<h1 class="mb30">Convertisseur d'images PGM en ASCII Art</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+
+    <div id="fh5co-services" class="fh5co-bg-section">
+        <div class="container">
+            <div class="row row-pb-md">
+                <div class="fh5co-heading">
+                    <h2>Contexte du projet</h2>
+                    <div class="paragraphe">
+                        <p>Pour ce projet, je devais développer un programme capable de convertir des images PGM en ASCII Art en utilisant une palette de 
+                            caractères en fonction des niveaux de gris.</p>
+                        <p>Le projet devait être réalisé en une journée et demie et impliquait de travailler en équipe de deux personnes pour répondre 
+                            à un cahier des charges strict.</p>
+                    </div>
+
+                <h2>Étapes de développement</h2>
+                <p>Pour tout le développement, j'ai codé en c++ sur <strong>Visual Studio</strong></p>
+                <h3>1. Lecture de l'en-tête du fichier PGM</h3>
+                <p>La première étape a été de développer une fonction pour analyser l'en-tête d'une image PGM et extraire les informations essentielles telles que la largeur et la hauteur de l'image.</p>
+    
+                <h3>2. Conversion des niveaux de gris en caractères ASCII</h3>
+                <p>Ensuite, j'ai créé une fonction pour lire le reste du fichier et convertir les niveaux de gris en caractères ASCII selon une palette prédéfinie.</p>
+                <div class="palette-example">
+                    <p>Exemple de palette :</p>
+                    <pre>@%#*+=-:. </pre>
+                </div>
+    
+                <h3>3. Enregistrement de l'image ASCII</h3>
+                <p>Une fois la conversion réalisée, j'ai rajouté une fonctionnalité permettant d'enregistrer la version ASCII de l'image dans un fichier texte. 
+                    Cette fonctionnalité utilise les flux de sortie C++ comme <code>ofstream</code>.</p>
+    
+                <h3>4. Personnalisation du nom du fichier de sortie</h3>
+                <p>Un autre point important était que le client devait pouvoir choisir le nom du fichier 
+                    de sortie. De la même manière, grâce à une variable de type : <code>std::string</code>, j'ai pu stoker
+                     le nom du fichier et le réutiliser</p>
+    
+                <h3>5. Choix de la palette de caractères</h3>
+                <p>L'utilisateur pouvait aussi choisir la palette de caractères qu'il souhaitait utiliser pour la conversion. 
+                    Cette fonctionnalité a été ajouter via d'autres fonctions.</p>
+    
+                <h3>6. Exécution depuis la ligne de commande</h3>
+                <p>Enfin, j'ai fait en sorte que le programme puisse être exécuté en ligne de commande, avec des arguments. 
+                    Cela a offert une plus grande flexibilité à l'utilisateur.</p>
+    
+                <h2>Compétences mobilisées</h2>
+                <ul>
+                    <li>Implémenter des conceptions simples.</li>
+                    <li>Élaborer des conceptions simples.</li>
+                    <li>Faire des essais et évaluer leurs résultats en regard des spécifications.</li>
+                    <li>Développer des interfaces utilisateurs.</li>
+                    <li>Élaborer et implémenter des spécifications fonctionnelles et non fonctionnelles à partir des exigences.</li>
+                    <li>Adopter de bonnes pratiques de conception et de programmation.</li>
+                    <li>Vérifier et valider la qualité de l’application par des tests.</li>
+                    <li>Mobiliser les compétences interpersonnelles pour intégrer une équipe informatique.</li>
+                    <li>Rendre compte de son activité professionnelle.</li>
+                </ul>
+    
+                <h2>Retour critique</h2>
+                <p>Pour donner un regard critique sur ce projet, je dirais que dans le groupe, 
+                    nous aurions pu être plus rapides et mieux répartir les tâches. 
+                    Nous n'avons pas pu implémenter la dernière fonctionnalité qui consistait à réduire une image en faisant 
+                    la moyenne de couleur de chaque pixel.
+                Et J'aurais pu créer une interface utilisateur 
+                en QT ou en utilisant les MFC ( bibliothèque de classes en C++ encapsulant l'API Win32 de Windows)</p>
+    
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="IMGLOGOCENTER">
+                            <div class="image-container">
+                                <a href="images/img_pika1.png">
+                                    <img src="images/img_pika1.png" alt="Exemple numéro 1" class="img-responsive side-by-side">
+                                </a>
+                                <a href="images/img_pika2.png">
+                                    <img src="images/img_pika2.png" alt="Exemple numéro 1" class="img-responsive side-by-side">
+                                </a>
+                                <a href="images/img_pika3.png">
+                                    <img src="images/img_pika3.png" alt="Exemple numéro 1" class="img-responsive side-by-side">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p><a href="PageProjet.html" class="btn btn-primary">Voir d'autres projets</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+		<!-- PARTIE SUR L'INVITATION A VENIR FAIRE UN PROJET AVEC MOI -->
+		<div id="fh5co-started">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<span>Travaillons ensemble !</span>
+						<h2>Commencer un projet</h2>
+						<p><a href="PageContact.html" class="btn btn-default">Me contacter</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	<!-- FOOTER -->
+	<footer class="site-footer">
+		<div class="footer-content">
+			<p>&copy; 2024 Yanis MERIEM. Tous droits réservés.</p>
+			
+			<a href="https://www.linkedin.com/in/yanis-meriem/" target="_blank"><i class="icon-linkedin"></i></a>
+		</div>
+	</footer>
+	</div>
+
+	<!-- BOUTON POUR ALLER EN HAUT DE LA PAGE -->
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- INCLUSION DE BIBLIOTHEQUE UTILE POUR LE SITE-->
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+

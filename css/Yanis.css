@@ -1,0 +1,276 @@
+
+
+.paragraphe{
+    font-size: 20px;
+    color: #000;
+    text-align: justify;
+}
+
+.EnGras{
+    font-weight: bold;
+}
+
+.maListe{
+    margin-bottom: 30px; /* Add margin-bottom to create empty space below */
+}
+
+.algorithmes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 50px; /* Add margin-bottom to create empty space below */
+}
+
+.algorithmes-table th, .algorithmes-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.algorithmes-table th {
+    background-color: #f2f2f2;
+}
+
+.algorithmes-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.algorithmes-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.ACoteImg {
+    margin-left: 500px;
+}
+
+
+item-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-list li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.item-list a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.item-list img {
+    max-width: 100px; /* Adjust as necessary */
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.item-list p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+.beautiful-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Optional: Rounded corners for images */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    margin-bottom: 20px; /* Add margin-bottom to create empty space below */
+}
+
+.beautiful-image:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.fh5co-project {
+    margin-bottom: 30px; /* Add space between the rows */
+    text-align: center; /* Center align the images within their columns */
+}
+
+.fh5co-project a {
+    display: block; /* Ensure the anchor tag spans the full width of the column */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.TexteADroite, .TexteAGauche {
+    width: 90%; /* Ajustez la largeur selon vos besoins */
+    margin: 20px 0;
+}
+
+.TexteADroite {
+    text-align: justify;
+    align-self: flex-end;
+    width: 800px;
+}
+
+.TexteAGauche {
+    text-align: justify;
+    align-self: flex-start;
+    width: 800px;
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les images */
+}
+
+.side-by-side {
+    width: 400; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.side-by-side:hover {
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+.imgCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.beautiful-image-inGame {
+    width: 500px;
+    height: auto;
+    border-radius: 15px; /* Optional: Rounded corners for images */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    margin-bottom: 20px; /* Add margin-bottom to create empty space below */
+}
+
+.beautiful-image-inGame:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+
+
+.site-footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pousse le footer en bas de la page */
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+
+
+.beautiful-image-eco {
+    width: 400px;
+    height: auto;
+    border-radius: 15px; /* Optional: Rounded corners for images */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    margin-bottom: 20px; /* Add margin-bottom to create empty space below */
+}
+
+.beautiful-image-eco:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+item-list-eco ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-list-eco li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.item-list-eco a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.item-list-eco img {
+    
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.item-list-eco p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.TexteCenter{
+    text-align: center;
+}
+
+
+.UneSeulLigne {
+    white-space: nowrap;
+}
+
+
+.CV{
+    margin-top: 20px;
+    margin-bottom: 50px; /* Add margin-bottom to create empty space below */
+}
+
+
+
+
+.beautiful-image-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 15px; /* Optional: Rounded corners for images */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    margin-bottom: 20px; /* Add margin-bottom to create empty space below */
+    
+}
+
+.beautiful-image-logo:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.IMGLOGOCENTER{
+text-align: center;
+margin-bottom: 40px;
+}
