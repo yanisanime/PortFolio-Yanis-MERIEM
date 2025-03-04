@@ -133,7 +133,7 @@ item-list ul {
 }
 
 .side-by-side {
-    width: 400; /* Ajustez la largeur selon vos besoins */
+    width: 90px; /* Ajustez la largeur selon vos besoins */
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -394,3 +394,22 @@ margin-bottom: 40px;
 .timeline-item:nth-child(even)::after {
     left: -14px;
 }
+
+
+
+/*css pour afficher l'image de mon CV*/
+
+.CVImage{
+    width: 400px;
+    height: auto;
+    border-radius: 15px; /* Optional: Rounded corners for images */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    margin-bottom: 20px; /* Add margin-bottom to create empty space below */
+}
+
+.CVImage:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
