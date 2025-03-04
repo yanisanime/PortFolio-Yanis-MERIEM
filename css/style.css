@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li.has-dropdown .dropdown li a {
   padding: 2px 0;
   display: block;
-  color: #999999;
+  color:  rgba(166, 142, 190, 1);
   line-height: 1.2;
   text-transform: none;
   font-size: 15px;
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-top: 0px;
   left: 50%;
   margin-left: -4px;
-  background: #f35f55;
+  background: rgba(166, 142, 190, 1);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1540,21 +1540,21 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #0C9CEE;
+  background: rgba(166, 142, 190, 1);
   color: #fff;
-  border: 2px solid #0C9CEE;
+  border: 2px solid rgba(166, 142, 190, 1);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #20a7f4 !important;
-  border-color: #20a7f4 !important;
+  background: rgba(166, 142, 190, 1) !important;
+  border-color:rgba(166, 142, 190, 1) !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #0C9CEE;
-  border: 2px solid #0C9CEE;
+  color:rgba(166, 142, 190, 1);
+  border: 2px solid rgba(166, 142, 190, 1);
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #0C9CEE;
+  background: rgba(166, 142, 190, 1);
   color: #fff;
 }
 

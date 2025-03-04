@@ -190,7 +190,7 @@ item-list ul {
 }
 
 .footer-content a {
-    color: #007bff;
+    color:rgba(166, 142, 190, 1);
     text-decoration: none;
 }
 
@@ -287,7 +287,8 @@ margin-bottom: 40px;
 /*pour les icone de la page d'accueil*/
 
 .service {
-    background-color: rgb(100, 116, 122);
+   /* background-color: rgb(100, 116, 122);*/
+   background-color: rgb(166, 142, 190);
     color: white;
     padding: 20px;
     margin: 10px; 
@@ -311,35 +312,73 @@ margin-bottom: 40px;
 
 /*pour les icone de la page d'accueil*/
 .competence {
-    background-color:  rgb(100, 116, 122);
+    background-color: rgba(166, 142, 190, 0.9);
     color: white;
-    padding: 10px;
-    margin: 5px; 
-    border-radius: .75rem;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
     text-align: center;
     margin-bottom: 50px;
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Align items horizontally */
-    transition: transform 0.5s, box-shadow 0.5s; /* Ajout d'une transition pour l'état normal */  
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: visible; /* Permet de voir la description sans affecter les autres */
 }
+
 .competence .icon {
-    font-size: 40px; 
-    margin-bottom: 8px; 
+    font-size: 50px; /* Augmentation de la taille de l'icône */
+    margin-bottom: 15px; /* Augmentation de la marge inférieure */
     text-align: center;
 }
 
 .competence:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-    transition: 0.5s;
+    transform: scale(1.1);
+    z-index: 10;
+    background-color: rgba(166, 142, 190, 1);
 }
+
+.competence-description {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Set width to 100% to match the parent competence */
+    background-color: rgba(166, 142, 190, 1);
+    color: rgb(0, 0, 0);
+    padding: 15px; /*hauteur de la box*/
+    min-height: 170px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    /*changer la taille du texte en plus petit*/
+    font-size: 15px;
+}
+
+.competence:hover .competence-description {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .competence h3 {  
     margin: 0; /* Supprime la marge par défaut des h3 */  
     text-align: center; /* Assure que le texte est centré dans le conteneur */  
-}  
+}
+
+.competenceLigne {
+    /*pour augmenter l'espace avec ce qu'il y a au dessus*/
+    margin-top: 55px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
 
 /*pour l'invers de hover*/
 
@@ -414,7 +453,7 @@ margin-bottom: 40px;
 }
 
 .timeline-year {
-    background: rgb(100, 116, 122);
+    background: rgb(166, 142, 190);
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -486,4 +525,22 @@ margin-bottom: 40px;
 
 .blancfond{
     background: rgba(0, 0, 0, 0.05);
+}
+
+/*pour justifier le text*/
+
+.textejustifié p{
+    text-align: justify;
+}
+
+.espaceAugmente h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/*pour donne la couleur rose au menu déroulant */
+
+.dropdown-couleurRose li a {
+    color:  rgba(166, 142, 190, 1);
 }
