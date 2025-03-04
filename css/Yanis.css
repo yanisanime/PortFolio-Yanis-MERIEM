@@ -302,6 +302,68 @@ margin-bottom: 40px;
 }
 
 
+/*pour les icone de la page d'accueil*/
+.competence {
+    background-color:  rgb(100, 116, 122);
+    color: white;
+    padding: 10px;
+    margin: 5px; 
+    border-radius: .75rem;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items horizontally */
+    transition: transform 0.5s, box-shadow 0.5s; /* Ajout d'une transition pour l'état normal */  
+
+}
+.competence .icon {
+    font-size: 40px; 
+    margin-bottom: 8px; 
+    text-align: center;
+}
+
+.competence:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    transition: 0.5s;
+}
+
+.competence h3 {  
+    margin: 0; /* Supprime la marge par défaut des h3 */  
+    text-align: center; /* Assure que le texte est centré dans le conteneur */  
+}  
+
+/*pour l'invers de hover*/
+
+
+
+.competence.color-4 {
+    background-color: #f39c12;
+    color: white;
+}
+
+.competence.color-5 {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.competence.color-6 {
+    background-color: #3498db;
+    color: white;
+}
+
+.competence.color-7 {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.competence.color-8 {
+    background-color: #9b59b6;
+    color: white;
+}
+
+
 
 
 /* Timeline Styles */
@@ -413,3 +475,8 @@ margin-bottom: 40px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
+/*pour mettre un fond en blanc*/
+
+.blancfond{
+    background: rgba(0, 0, 0, 0.05);
+}
