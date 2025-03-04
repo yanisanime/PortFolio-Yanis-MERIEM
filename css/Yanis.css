@@ -133,7 +133,7 @@ item-list ul {
 }
 
 .side-by-side {
-    width: 400; /* Ajustez la largeur selon vos besoins */
+    width: 90px; /* Ajustez la largeur selon vos besoins */
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -190,7 +190,7 @@ item-list ul {
 }
 
 .footer-content a {
-    color: #007bff;
+    color:rgba(166, 142, 190, 1);
     text-decoration: none;
 }
 
@@ -287,16 +287,260 @@ margin-bottom: 40px;
 /*pour les icone de la page d'accueil*/
 
 .service {
-    background-color: rgb(130, 130, 155);
+   /* background-color: rgb(100, 116, 122);*/
+   background-color: rgb(166, 142, 190);
     color: white;
     padding: 20px;
     margin: 10px; 
     border-radius: .75rem;
     text-align: center;
     margin-bottom: 50px;
+    transition: transform 0.5s, box-shadow 0.5s; /* Ajout d'une transition pour l'état normal */  
 }
 .service .icon {
     font-size: 40px; 
     margin-bottom: 8px; 
     text-align: center;
+}
+
+.service:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    transition: 0.5s;
+}
+
+
+/*pour les icone de la page d'accueil*/
+.competence {
+    background-color: rgba(166, 142, 190, 0.9);
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: visible; /* Permet de voir la description sans affecter les autres */
+}
+
+.competence .icon {
+    font-size: 50px; /* Augmentation de la taille de l'icône */
+    margin-bottom: 15px; /* Augmentation de la marge inférieure */
+    text-align: center;
+}
+
+.competence:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    background-color: rgba(166, 142, 190, 1);
+}
+
+.competence-description {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Set width to 100% to match the parent competence */
+    background-color: rgba(166, 142, 190, 1);
+    color: rgb(0, 0, 0);
+    padding: 15px; /*hauteur de la box*/
+    min-height: 170px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    text-align: justify;
+    /*changer la taille du texte en plus petit*/
+    font-size: 15px;
+}
+
+.competence:hover .competence-description {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.competence h3 {  
+    margin: 0; /* Supprime la marge par défaut des h3 */  
+    text-align: center; /* Assure que le texte est centré dans le conteneur */  
+}
+
+.competenceLigne {
+    /*pour augmenter l'espace avec ce qu'il y a au dessus*/
+    margin-top: 55px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/*pour l'invers de hover*/
+
+
+
+.competence.color-4 {
+    background-color: #f39c12;
+    color: white;
+}
+
+.competence.color-5 {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.competence.color-6 {
+    background-color: #3498db;
+    color: white;
+}
+
+.competence.color-7 {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.competence.color-8 {
+    background-color: #9b59b6;
+    color: white;
+}
+
+
+
+
+/* Timeline Styles */
+#fh5co-timeline {
+    padding: 50px 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 11px;
+    background: #ccc;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-year {
+    background: rgb(166, 142, 190);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.timeline-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.timeline-content p {
+    color: #666;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    background: #6e6e6e;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(10%);
+    z-index: 1;
+    border: solid 4px white;
+}
+
+.timeline-item:nth-child(odd)::after {
+    left: auto;
+    right: -14px;
+}
+
+.timeline-item:nth-child(even)::after {
+    left: -14px;
+}
+
+
+
+/*css pour afficher l'image de mon CV*/
+
+.CVImage{
+    width: 400px;
+    height: auto;
+    border-radius: 15px; /* Optional: Rounded corners for images */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    margin-bottom: 20px; /* Add margin-bottom to create empty space below */
+}
+
+.CVImage:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/*pour mettre un fond en blanc*/
+
+.blancfond{
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/*pour justifier le text*/
+
+.textejustifié p{
+    text-align: justify;
+}
+
+.espaceAugmente h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/*pour donne la couleur rose au menu déroulant */
+
+.dropdown-couleurRose li a {
+    color:  rgba(166, 142, 190, 1);
 }
