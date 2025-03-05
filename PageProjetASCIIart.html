@@ -51,56 +51,110 @@
 	<div id="page">
 
 		<!-- PARTI POUR LE MENU DU SITE -->
-	<nav class="fh5co-nav" role="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<!-- <div id="fh5co-logo"><a href="index.html">Shape<span>.</span></a></div> -->
+		<nav class="fh5co-nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<!-- <div id="fh5co-logo"><a href="index.html">Shape<span>.</span></a></div> -->
+					</div>
+					<div class="col-xs-12 text-center menu-1">
+						<ul>
+							<li"><a href="index.html">Accueil</a></li> <!-- ON EST SUR CETTE PAGE -->
+							<li class="has-dropdown active">
+								<!-- ICI projet est une liste deroulante -->
+								<a href="PageProjet.html">Mes Projets</a>
+								<ul class="dropdown">
+									<li><a href="PageProjetASCIIart.html">Convertisseur en ASCII art</a></li>
+									<li><a href="PageProjetJeuxVideo.html">Création d'un jeu vidéo</a></li>
+									<li><a href="PageProjetComparaisonAlgo.html">Comparaison d'approche algorithmique</a></li>
+								</ul>
+							</li>
+							<li class="has-dropdown">
+								<a href="PageMesCompetence.html">Mes Compétences</a>
+								<ul class="dropdown">
+									<li><a href="PageMesCompetence.html">Programation</a></li>
+									<li><a href="PageEcologie.html">Côté numérique responsable</a></li>
+								</ul>
+							</li>
+							<li><a href="PageAboutMe.html">A propos de moi </a></li>
+							<li><a href="PageContact.html">Contact</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-xs-12 text-center menu-1">
-					<ul>
-						<li"><a href="index.html">Accueil</a></li> <!-- ON EST SUR CETTE PAGE -->
-						<li class="has-dropdown active">
-							<!-- ICI projet est une liste deroulante -->
-							<a href="PageProjet.html">Mes Projets</a>
-							<ul class="dropdown">
-								<li><a href="PageProjetASCIIart.html">Convertisseur en ASCII art</a></li>
-								<li><a href="PageProjetJeuxVideo.html">Création d'un jeu vidéo</a></li>
-								<li><a href="PageProjetComparaisonAlgo.html">Comparaison d'approche algorithmique</a></li>
-							</ul>
-						</li>
-						<li class="has-dropdown">
-							<a href="PageMesCompetence.html">Mes Compétences</a>
-							<ul class="dropdown">
-								<li><a href="PageMesCompetence.html">Programation</a></li>
-								<li><a href="PageEcologie.html">Côté numérique responsable</a></li>
-							</ul>
-						</li>
-						<li><a href="PageAboutMe.html">A propos de moi </a></li>
-						<li><a href="PageContact.html">Contact</a></li>
-					</ul>
+			</div>
+		</nav>
+
+		<!-- TITRE  -->
+		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeInUp">
+								<h1 class="mb30">Convertisseur d'images PGM en ASCII Art</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+
+
+		<div id="fh5co-formation" class="fh5co-section">
+			<div class="container">
+				<div class="row animate-box" data-animate-effect="fadeInUp">
+					<div class="col-md-10 col-md-offset-1 text-center fh5co-heading textejustifié" style="margin-top: 40px;">
+						<h2>Contexte du projet</h2>
+						
+						<p style="margin: 40px;">
+							Pour ce projet, je devais développer un programme capable de convertir des images PGM en ASCII Art en utilisant une palette de 
+							caractères en fonction des niveaux de gris.
+							Le projet devait être réalisé en une journée et demie et impliquait de travailler en équipe de deux personnes pour répondre 
+							à un cahier des charges strict.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</nav>
 
-	<!-- TITRE  -->
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeInUp">
-							<h1 class="mb30">Convertisseur d'images PGM en ASCII Art</h1>
+
+		<div id="fh5co-competence" class="fh5co-section blancfond">
+			<div class="container ">
+				<div class="row text-center competenceProjLigne animate-box" data-animate-effect="fadeInUp">
+					<div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj">
+							<h3>Unity</h3>
+						</div>
+					</div>
+					<div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj">
+							<h3>JavaScript</h3>
+						</div>
+					</div>
+					<div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj">
+							<h3>C++</h3>
+						</div>
+					</div>
+					<div class="col-md-3 animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj ">
+							<h3>C#</h3>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
 
 
+
+
+
+
+
+		</div>
 
 
     <div id="fh5co-services" class="fh5co-bg-section">

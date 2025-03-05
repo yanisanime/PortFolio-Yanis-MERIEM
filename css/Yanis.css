@@ -634,3 +634,46 @@ margin-bottom: 40px;
     justify-content: center;
     align-items: stretch;
 }
+
+/*css ici pour représenter des compétences dans des petites bulle rose traansparant en fond et rose foncé pour la couleur du texte*/
+
+.competenceProj {
+    background-color: rgba(55, 54, 56, 0.9);
+    color: rgba(248, 241, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px; /* Changer la forme en cercle */
+    text-align: center;
+    margin-bottom: 50px;
+    width: 180px; /* Définir une largeur fixe pour le cercle */
+    height: 20px; /* Définir une hauteur fixe pour le cercle */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    opacity: 0.8; /* Opacité de 80% */
+}
+
+.competenceProj:hover {
+    transform: scale(1.2); /* Grossir le cercle au survol */
+    z-index: 10;
+}
+
+.competenceProj h3 {
+    font-size: 24px;
+    opacity: 1;
+    color: rgba(211, 181, 241, 0.9);
+    margin: 0; /* Supprime la marge par défaut des h3 */
+}
+
+.competenceProjLigne {
+    /*pour augmenter l'espace avec ce qu'il y a au dessus*/
+    margin-top: 55px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
