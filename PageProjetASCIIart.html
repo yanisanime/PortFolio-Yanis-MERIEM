@@ -215,33 +215,24 @@
 
 		<!-- Radio buttons invisibles pour chaque slide -->
 
-		<div class="alignementBoutonCentre animate-box" data-animate-effect="fadeInUp">
+		<div class="alignementBoutonCentre animate-box radio-buttons" data-animate-effect="fadeInUp">
 
 			<input type="radio" name="slide" id="slide-1" checked>
-			<label for="slide-1" class="controls">1</label>
-
 			<input type="radio" name="slide" id="slide-2">
-			<label for="slide-2" class="controls">2</label>
-
 			<input type="radio" name="slide" id="slide-3">
-			<label for="slide-3" class="controls">3</label>
-
 			<input type="radio" name="slide" id="slide-4">
-			<label for="slide-4" class="controls">4</label>
-
 			<input type="radio" name="slide" id="slide-5">
-			<label for="slide-5" class="controls">5</label>
 
 
 			<!-- Conteneur du carousel -->
 			<div class="carousel-container">
 				<div class="carousel">
 					<div class="carousel-item">
-						<h3>1. Lecture de l'en-tête</h3>
+						<h3>Lecture de l'en-tête</h3>
 						<p>La première étape a été de développer une fonction pour analyser l'en-tête d'une image PGM et extraire les informations essentielles telles que la largeur et la hauteur de l'image.</p>
 					</div>
 					<div class="carousel-item">
-						<h3>2. Conversion en ASCII</h3>
+						<h3>Conversion en ASCII</h3>
 						<p>Ensuite, j'ai créé une fonction pour lire le reste du fichier et convertir les niveaux de gris en caractères ASCII selon une palette prédéfinie.</p>
 						<div class="palette-example" style="width: 230px; margin: 0 auto; text-align: center;">
 							<p>Exemple de palette :</p>
@@ -249,23 +240,30 @@
 						</div>
 					</div>
 					<div class="carousel-item">
-						<h3>3. Enregistrement</h3>
+						<h3>Enregistrement</h3>
 						<p>Une fois la conversion réalisée, j'ai rajouté une fonctionnalité permettant d'enregistrer la version ASCII de l'image dans un fichier texte. 
 							Cette fonctionnalité utilise les flux de sortie C++ comme <code>ofstream</code>.</p>
 					</div>
 					<div class="carousel-item">
-						<h3>4. Personnalisation du nom du fichier de sortie</h3>
+						<h3>Personnalisation du nom du fichier de sortie</h3>
 						<p>Un autre point important était que le client devait pouvoir choisir le nom du fichier 
 							de sortie. De la même manière, grâce à une variable de type : <code>std::string</code>, j'ai pu stoker
 							 le nom du fichier et le réutiliser</p>
 					</div>
 					<div class="carousel-item">
-						<h3>5. Exécution depuis la ligne de commande</h3>
+						<h3>Exécution depuis la ligne de commande</h3>
 						<p>Enfin, j'ai fait en sorte que le programme puisse être exécuté en ligne de commande, avec des arguments. 
 							Cela a offert une plus grande flexibilité à l'utilisateur.</p>
 					</div>
 				</div>
 			</div>
+
+
+			<label for="slide-1" class="controls">1</label>
+			<label for="slide-2" class="controls">2</label>
+			<label for="slide-3" class="controls">3</label>
+			<label for="slide-4" class="controls">4</label>
+			<label for="slide-5" class="controls">5</label>
 		</div>
 
 		<div id="fh5co-competence" class="fh5co-section blancfond">
@@ -313,8 +311,9 @@
 							Et J'aurais pu créer une interface utilisateur 
 							en QT ou en utilisant les MFC ( bibliothèque de classes en C++ encapsulant l'API Win32 de Windows)</p>
 						
-						<p><a href="PageEcologie.html" class="btn btn-primary">En savoir plus sur le numérique responsable</a></p>
+							
 					</div>
+					<p><a href="PageProjet.html" class="btn btn-primary" style="margin-bottom: 40px;">Voir d'autres projets</a></p>
 				</div>
 			</div>
 		</div>
