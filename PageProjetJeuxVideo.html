@@ -51,54 +51,353 @@
 	<div id="page">
 
 		<!-- PARTI POUR LE MENU DU SITE -->
-	<nav class="fh5co-nav" role="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<!-- <div id="fh5co-logo"><a href="index.html">Shape<span>.</span></a></div> -->
-				</div>
-				<div class="col-xs-12 text-center menu-1">
-					<ul>
-						<li"><a href="index.html">Accueil</a></li> <!-- ON EST SUR CETTE PAGE -->
-						<li class="has-dropdown active">
-							<!-- ICI projet est une liste deroulante -->
-							<a href="PageProjet.html">Mes Projets</a>
-							<ul class="dropdown">
-								<li><a href="PageProjetASCIIart.html">Convertisseur en ASCII art</a></li>
-								<li><a href="PageProjetJeuxVideo.html">Création d'un jeu vidéo</a></li>
-								<li><a href="PageProjetComparaisonAlgo.html">Comparaison d'approche algorithmique</a></li>
-							</ul>
-						</li>
-						<li class="has-dropdown">
-							<a href="PageMesCompetence.html">Mes Compétences</a>
-							<ul class="dropdown">
-								<li><a href="PageMesCompetence.html">Programation</a></li>
-								<li><a href="PageEcologie.html">Côté numérique responsable</a></li>
-							</ul>
-						</li>
-						<li><a href="PageAboutMe.html">A propos de moi </a></li>
-						<li><a href="PageContact.html">Contact</a></li>
-					</ul>
+		<nav class="fh5co-nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<!-- <div id="fh5co-logo"><a href="index.html">Shape<span>.</span></a></div> -->
+					</div>
+					<div class="col-xs-12 text-center menu-1">
+						<ul>
+							<li"><a href="index.html">Accueil</a></li> <!-- ON EST SUR CETTE PAGE -->
+							<li class="has-dropdown active">
+								<!-- ICI projet est une liste deroulante -->
+								<a href="PageProjet.html">Mes Projets</a>
+								<ul class="dropdown">
+									<li><a href="PageProjetASCIIart.html">Convertisseur en ASCII art</a></li>
+									<li><a href="PageProjetJeuxVideo.html">Création d'un jeu vidéo</a></li>
+									<li><a href="PageProjetComparaisonAlgo.html">Comparaison d'approche algorithmique</a></li>
+								</ul>
+							</li>
+							<li class="has-dropdown">
+								<a href="PageMesCompetence.html">Mes Compétences</a>
+								<ul class="dropdown">
+									<li><a href="PageMesCompetence.html">Programation</a></li>
+									<li><a href="PageEcologie.html">Côté numérique responsable</a></li>
+								</ul>
+							</li>
+							<li><a href="PageAboutMe.html">A propos de moi </a></li>
+							<li><a href="PageContact.html">Contact</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
 
-	<!-- TITRE  -->
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeInUp">
-							<h1 class="mb30">Développement d'un jeu vidéo</h1>
+		<!-- TITRE  -->
+		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeInUp">
+								<h1 class="mb30">Développement d'un jeu vidéo</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Context du projet -->
+		<div id="fh5co-formation" class="fh5co-section">
+			<div class="container">
+				<div class="row animate-box" data-animate-effect="fadeInUp">
+					<div class="col-md-12 col-md-offset-0 text-center fh5co-heading textejustifié" style="margin-top: 40px;">
+						<h2>Contexte du projet</h2>
+						
+						<p style="margin: 40px;">
+							Qu'est-ce que je devais faire ? Un jeu vidéo. C'est pratiquement la seule consigne que nous avons eue. <br>
+							Non, pour être plus sérieux, le projet consistait en la réalisation d'un jeu vidéo sans thème imposé, sur le moteur que 
+							l'on voulait et en bonus, on pouvait se pencher sur l'accessibilité et le numérique responssable.
+						</p>
+
+						<!-- image du résultat -->
+						<div class="item-list-eco animate-box" data-animate-effect="fadeInUp">
+							<ul>
+								<li>
+									<img src="images/img_Slime_InGame.png" alt="image du résultat du projet" class="img-responsive beautiful-image-eco" style="width: 400px; height: auto;">
+									<div>
+										<h3 class="text-2xl font-semibold text-gray-700">Image du résultat</h3>
+										<p class="text-gray-600 mt-4" style="text-align: justify; font-size: 18px;">
+											SLIME GO est un jeu développé en 3D sous le moteur de jeu Unity et entièrement codé en C#. 
+											C’est un jeu de type Endless runner qui consiste à survivre le plus longtemps possible sans mourir. 
+											Il vise un public plutôt jeune de par son univers avec des personnages enfantins.
+										</p>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
+
+		<!-- Compétences mobilisées -->
+		<div id="fh5co-competence" class="fh5co-section blancfond">
+			<div class="container ">
+				<div class="row animate-box" data-animate-effect="fadeInUp">
+					<div class="col-md-12 col-md-offset-0 text-center fh5co-heading" style="margin-top: 50px;">
+						<h2>Compétences mobilisées</h2>
+					</div>
+				</div>
+
+				<div class="row text-center competenceProjLigne animate-box" data-animate-effect="fadeInUp">
+
+					<div class="animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj">
+							<h3>C#</h3>
+						</div>
+					</div>
+
+					<div class="animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj">
+							<h3>Génération procédurale</h3>
+						</div>
+					</div>
+
+					<div class="canimate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj">
+							<h3>Unity</h3>
+						</div>
+					</div>
+
+					<div class="animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj ">
+							<h3>Optimisation des performances</h3>
+						</div>
+					</div>
+
+					<div class="animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj ">
+							<h3>Développer des interfaces</h3>
+						</div>
+					</div>
+
+					<div class="animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj ">
+							<h3>Travailler en équipe</h3>
+						</div>
+					</div>
+
+					<div class="animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj ">
+							<h3>Créativité</h3>
+						</div>
+					</div>
+
+					<div class="animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj ">
+							<h3>Gestion de projet</h3>
+						</div>
+					</div>
+
+					<div class="animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj ">
+							<h3>Level design</h3>
+						</div>
+					</div>
+
+					<div class="animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj ">
+							<h3>Système de sauvegarde</h3>
+						</div>
+					</div>
+
+					<div class="animate-box" data-animate-effect="fadeInUp">
+						<div class="competenceProj ">
+							<h3>Adaptabilité</h3>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Étapes de développement -->
+		<div id="fh5co-formation" class="fh5co-section">
+			<div class="container">
+				<div class="row animate-box" data-animate-effect="fadeInUp">
+					<div class="col-md-10 col-md-offset-1 text-center fh5co-heading textejustifié" style="margin-top: 40px;">
+						<h2>Étapes de développement</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="alignementBoutonCentre animate-box radio-buttons" data-animate-effect="fadeInUp">
+
+			<input type="radio" name="slide" id="slide-1" checked>
+			<input type="radio" name="slide" id="slide-2">
+			<input type="radio" name="slide" id="slide-3">
+			<input type="radio" name="slide" id="slide-4">
+			<input type="radio" name="slide" id="slide-5">
+			<input type="radio" name="slide" id="slide-6">
+
+
+			<!-- Conteneur du carousel -->
+			<div class="carousel-container">
+				<div class="carousel">
+
+					<div class="carousel-item">
+						<h3>Développement du terrain</h3>
+						<p>
+							La construction du terrain, infini, dynamique et visuellement attrayant, fut une étape clé. Pour cela, 
+							j'ai opté pour une génération procédurale via des scripts, créant des plateformes en fonction de la position du joueur, 
+							plutôt que de le concevoir statiquement dans Unity.
+						</p>
+						<div style="width: 372px; margin: 0 auto; text-align: center;">
+							<img src="images/img_Slime_terrainFin.png" alt="Image du terrain au début" class="img-responsive beautiful-image" style="height: 170px; width: auto; overflow: hidden; text-align: center;">
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<h3>Les Bonus !</h3>
+						<p>
+							Slime Go est un jeu où l'utilisateur doit avancer le plus loin possible. Et pour l'aider, il y a plusieurs bonus :
+						</p>
+
+						<div class="item-list">
+							<ul>
+								<li>
+									<img src="images/img_Slime_magnet.png" alt="image de l'aimant" class="img-responsive beautiful-image" style="width: 100px; height: auto;">
+									<p style="color: #828282; margin-left: 20px;">L'aimant permet au joueur de récolter plus de pièces. Il fonctionne en attirant toutes les pièces proches vers le joueur.</p>
+								</li>
+								<li>
+									<img src="images/img_Slime_shild.png" alt="image du bouclier" class="img-responsive beautiful-image" style="width: 100px; height: auto;">
+									<p style="color: #828282; margin-left: 20px;">Le bouclier permet de protéger le joueur du prochain obstacle rencontré.</p>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="carousel-item">
+						<h3>En parlant d'obstacle...</h3>
+						<p>
+							Comme beaucoup de jeux Endless runner, Slime Go intègre différents obstacles qui viendront empêcher le joueur d'avancer. 
+							Ils ont été réalisé en utilisant des boites de collision propre à Unity (des Collider) et des scripts pour les faire bouger, 
+							notamment en leur donnant une vitesse et une direction (ajout de vecteurs de force).
+						</p>
+						<div class="centered-images">
+							<img src="images/img_Slime_cactus.png" alt="image du cactus" class="img-responsive beautiful-image" style="width: 100px; height: auto;">
+							<img src="images/img_Slime_champi.png" alt="image du champignon" class="img-responsive beautiful-image" style="width: 100px; height: auto;">
+							<img src="images/img_Slime_caise.png" alt="image de la caisse" class="img-responsive beautiful-image" style="width: 100px; height: auto;">
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<h3>Un système de magasin</h3>
+						<p>
+							Le joueur contrôle un slime, personnage enfantin et coloré, dont l'apparence peut être personnalisée 
+							grâce à des skins à débloquer via le magasin du jeu. Ce dernier a été développé sur Unity en utilisant 
+							des ressources gratuites, et son esthétique s'inspire des jeux cartoon.
+						</p>
+						<div style="width: 372px; margin: 0 auto; text-align: center;">
+							<img src="images/img_Slime_magazin.png" alt="Image du magasin" class="img-responsive beautiful-image" style="height: 170px; width: auto; overflow: hidden; text-align: center;">
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<h3>Exécution depuis la ligne de commande</h3>
+						<p>
+							J'ai implémenté un système de sauvegarde robuste, permettant aux joueurs de conserver leur progression (skins, pièces). 
+							Il repose sur une classe CData (Singleton) pour gérer la sauvegarde, le chargement et le stockage des données. 
+							Pour sécuriser les données au-delà des PlayerPrefs Unity, un cryptage a été ajouté. 
+						</p>
+					</div>
+
+					<div class="carousel-item">
+						<h3>Un jeu accessible</h3>
+						<p>
+							Le jeu a été pensé pour être accessible à tous avec la possibilité de choisir les touches et d'activer ou non les effets lumineux.
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+
+			<label for="slide-1" class="controls">1</label>
+			<label for="slide-2" class="controls">2</label>
+			<label for="slide-3" class="controls">3</label>
+			<label for="slide-4" class="controls">4</label>
+			<label for="slide-5" class="controls">5</label>
+			<label for="slide-6" class="controls">6</label>
+		</div>
+
+		<!-- Resultat -->
+		<div id="fh5co-competence" class="fh5co-section blancfond">
+			<div class="container ">
+				<div class="row animate-box" data-animate-effect="fadeInUp">
+					<div class="col-md-12 col-md-offset-0 text-center fh5co-heading" style="margin-top: 40px;">
+						<h2>Résultat</h2>
+					</div>
+				</div>
+
+
+				<div class="row animate-box" data-animate-effect="fadeInUp" style="margin-bottom: 50px;">
+					<div class="col-md-6">
+						<img src="images/img_pika1.png" alt="Image 1" class="img-responsive" style="width: 80%; height: auto; margin-top: 0;">
+					</div>
+					<div class="col-md-6">
+						<img src="images/img_pika3.png" alt="Image 2" class="img-responsive" style="width: 100%; height: auto;margin-top: 0;">
+
+						<p style="margin-top: 15px; font-size: 18px; text-align: justify;">
+							L'algorithme de conversion implémenté permet de transposer les niveaux de gris d'une image PGM en caractères ASCII.
+						</p>
+
+						<p style="margin-top: 15px; font-size: 18px; text-align: justify;">
+							L'utilisateur peut ainsi facilement convertir ses images PGM en ASCII Art grâce à ce programme. Le résultat, présenté ci-dessus, 
+							offre un aperçu de la transformation obtenue.
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Regard critique -->
+		<div id="fh5co-formation" class="fh5co-section">
+			<div class="container">
+				<div class="row animate-box" data-animate-effect="fadeInUp">
+					<div class="col-md-12 col-md-offset-0 text-center fh5co-heading espaceAugmente">
+						<h1></h1>
+						<h2>Regard critique</h2>
+						<p style="text-align: justify;">Pour donner un regard critique sur ce projet, je dirais que dans le groupe, 
+							nous aurions pu être plus rapides et mieux répartir les tâches. 
+							Nous n'avons pas pu implémenter la dernière fonctionnalité qui consistait à réduire une image en faisant 
+							la moyenne de couleur de chaque pixel.
+							Et J'aurais pu créer une interface utilisateur 
+							en QT ou en utilisant les MFC ( bibliothèque de classes en C++ encapsulant l'API Win32 de Windows)</p>
+						
+							
+					</div>
+					<p><a href="PageProjet.html" class="btn btn-primary" style="margin-bottom: 40px;">Voir d'autres projets</a></p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -715,7 +715,7 @@ margin-bottom: 40px;
     border-radius: 25px;
     transition: background-color 0.3s ease;
     /*je veux beaucoup plus haut*/
-    height: 320px;
+    height: 350px;
     
 }
 
@@ -732,7 +732,11 @@ margin-bottom: 40px;
     /* margin-left: 300px; */
 }
 
-.carousel-item li:hover {
+.souligner{
+    color: rgba(211, 181, 241, 0.9);
+}
+
+.souligner a:hover {
     /*je veux qu'on les souligne*/
     text-decoration: underline;
 }
@@ -821,7 +825,8 @@ input[type="radio"]:checked + label {
 .radio-buttons input[type="radio"]:checked:nth-of-type(2) ~ .alignementBoutonCentre label:nth-of-type(2),
 .radio-buttons input[type="radio"]:checked:nth-of-type(3) ~ .alignementBoutonCentre label:nth-of-type(3),
 .radio-buttons input[type="radio"]:checked:nth-of-type(4) ~ .alignementBoutonCentre label:nth-of-type(4),
-.radio-buttons input[type="radio"]:checked:nth-of-type(5) ~ .alignementBoutonCentre label:nth-of-type(5) {
+.radio-buttons input[type="radio"]:checked:nth-of-type(5) ~ .alignementBoutonCentre label:nth-of-type(5),
+.radio-buttons input[type="radio"]:checked:nth-of-type(6) ~ .alignementBoutonCentre label:nth-of-type(6) {
     background-color: rgba(211, 181, 241, 0.9);
     color: white;
 }
@@ -844,4 +849,12 @@ input[type="radio"]:checked + label {
 }
 .carousel-item p {
     flex: 1; /* Permet au texte de prendre tout l'espace restant */
+}
+
+
+.centered-images {
+    display: flex;
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 15px; /* Ajoute un espace entre les images */
+    margin-top: 10px; /* Espace avec le texte */
 }
