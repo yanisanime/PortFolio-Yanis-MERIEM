@@ -640,20 +640,23 @@ margin-bottom: 40px;
 .competenceProj {
     background-color: rgba(55, 54, 56, 0.9);
     color: rgba(248, 241, 255, 0.9);
-    padding: 20px;
-    border-radius: 15px; /* Changer la forme en cercle */
+    padding: 10px 20px; /* Espacement pour ajuster la taille */
+    border-radius: 50px; /* Rend la bulle ovale */
     text-align: center;
     margin-bottom: 50px;
-    width: 180px; /* Définir une largeur fixe pour le cercle */
-    height: 20px; /* Définir une hauteur fixe pour le cercle */
-    display: flex;
+    min-width: 50px; /* Largeur minimale */
+    max-width: 500px; /* Largeur maximale pour éviter les bulles trop grandes */
+    height: auto; /* Hauteur ajustable */
+    display: inline-flex; /* Permet à la bulle de s’adapter au texte */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     position: relative;
-    opacity: 0.8; /* Opacité de 80% */
+    opacity: 0.8;
+    margin: 10px;
+    word-wrap: break-word; /* Permet le retour à la ligne si le texte est trop long */
 }
 
 .competenceProj:hover {
@@ -662,10 +665,12 @@ margin-bottom: 40px;
 }
 
 .competenceProj h3 {
-    font-size: 24px;
+    font-size: 20px;
     opacity: 1;
     color: rgba(211, 181, 241, 0.9);
     margin: 0; /* Supprime la marge par défaut des h3 */
+    padding: 5px; /* Ajout d’un padding pour éviter que le texte touche les bords */
+    text-align: center; /* Assure que le texte est centré dans le conteneur */
 }
 
 .competenceProjLigne {
@@ -676,4 +681,95 @@ margin-bottom: 40px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
+    gap: 15px; /* Ajoute un espacement entre les bulles */
+}
+
+
+/*pour la présentation des étape du projet */
+
+/* Style de base pour le carousel */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 600%; /* 100% * nombre de slides */
+}
+
+.carousel-item {
+    flex: 0 0 100%; /* Chaque slide prend 100% de la largeur du conteneur */
+    box-sizing: border-box;
+    background: rgba(106, 13, 173, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-item h3 {
+    margin-bottom: 10px;
+}
+
+/* Cacher les boutons radio */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style des boutons de navigation */
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.controls label {
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.controls label:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Lorsque chaque radio est sélectionné, déplacer le carousel */
+/* Lorsque chaque radio est sélectionné, déplacer le carousel */
+#slide-1:checked ~ .carousel-container .carousel {
+    transform: translateX(0%);
+}
+
+#slide-2:checked ~ .carousel-container .carousel {
+    transform: translateX(-100%);
+}
+
+#slide-3:checked ~ .carousel-container .carousel {
+    transform: translateX(-200%);
+}
+
+#slide-4:checked ~ .carousel-container .carousel {
+    transform: translateX(-300%);
+}
+
+#slide-5:checked ~ .carousel-container .carousel {
+    transform: translateX(-400%);
+}
+
+#slide-6:checked ~ .carousel-container .carousel {
+    transform: translateX(-500%);
+}
+
+.carousel-item:hover {
+    background-color: rgba(106, 13, 173, 0.3);
 }
