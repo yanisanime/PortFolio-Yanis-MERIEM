@@ -675,8 +675,7 @@ margin-bottom: 40px;
 
 .competenceProjLigne {
     /*pour augmenter l'espace avec ce qu'il y a au dessus*/
-    margin-top: 55px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -696,6 +695,7 @@ margin-bottom: 40px;
     width: 80%;
     margin: auto;
     overflow: hidden;
+    margin-top: 15px;
 }
 
 .carousel {
@@ -707,15 +707,19 @@ margin-bottom: 40px;
 .carousel-item {
     flex: 0 0 100%; /* Chaque slide prend 100% de la largeur du conteneur */
     box-sizing: border-box;
-    background: rgba(106, 13, 173, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 25px;
     transition: background-color 0.3s ease;
+    /*je veux beaucoup plus haut*/
+    height: 300px;
+    
 }
 
 .carousel-item h3 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 25px;
 }
 
 /* Cacher les boutons radio */
@@ -726,12 +730,24 @@ input[type="radio"] {
 /* Style des boutons de navigation */
 .controls {
     text-align: center;
-    margin-top: 10px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+
+
+.controls:hover {
+    background-color: rgba(106, 13, 173, 0.3);
+    opacity: 0.8;
+    color: white;
 }
 
 .controls label {
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin: 0 5px;
@@ -743,6 +759,12 @@ input[type="radio"] {
     background-color: #444;
     color: #fff;
 }
+
+input[type="radio"]:checked + label {
+    background-color: rgba(211, 181, 241, 0.9);
+    color: #fff; /* Texte en blanc */
+}
+
 
 /* Lorsque chaque radio est sélectionné, déplacer le carousel */
 /* Lorsque chaque radio est sélectionné, déplacer le carousel */
@@ -770,6 +792,8 @@ input[type="radio"] {
     transform: translateX(-500%);
 }
 
-.carousel-item:hover {
-    background-color: rgba(106, 13, 173, 0.3);
+
+
+.alignementBoutonCentre {
+    text-align: center;
 }

@@ -100,13 +100,10 @@
 			</div>
 		</header>
 
-
-
-
 		<div id="fh5co-formation" class="fh5co-section">
 			<div class="container">
 				<div class="row animate-box" data-animate-effect="fadeInUp">
-					<div class="col-md-10 col-md-offset-1 text-center fh5co-heading textejustifié" style="margin-top: 40px;">
+					<div class="col-md-12 col-md-offset-0 text-center fh5co-heading textejustifié" style="margin-top: 40px;">
 						<h2>Contexte du projet</h2>
 						
 						<p style="margin: 40px;">
@@ -120,11 +117,10 @@
 			</div>
 		</div>
 
-
 		<div id="fh5co-competence" class="fh5co-section blancfond">
 			<div class="container ">
 				<div class="row animate-box" data-animate-effect="fadeInUp">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading espaceAugmente">
+					<div class="col-md-12 col-md-offset-0 text-center fh5co-heading espaceAugmente">
 						<h2>Compétences mobilisées</h2>
 					</div>
 				</div>
@@ -185,205 +181,129 @@
 
 
 
-
-
-
-		<h2>Étapes de développement</h2>
-		<!-- Radio buttons invisibles pour chaque slide -->
-		<input type="radio" name="slide" id="slide-1" checked>
-		<input type="radio" name="slide" id="slide-2">
-		<input type="radio" name="slide" id="slide-3">
-		<input type="radio" name="slide" id="slide-4">
-		<input type="radio" name="slide" id="slide-5">
-		<input type="radio" name="slide" id="slide-6">
-
-		<!-- Conteneur du carousel -->
-		<div class="carousel-container">
-			<div class="carousel">
-				<div class="carousel-item">
-					<h3>1. Lecture de l'en-tête</h3>
-					<p>Extraction des dimensions de l'image.</p>
-				</div>
-				<div class="carousel-item">
-					<h3>2. Conversion en ASCII</h3>
-					<p>Transformation des niveaux de gris en caractères.</p>
-				</div>
-				<div class="carousel-item">
-					<h3>3. Enregistrement</h3>
-					<p>Sauvegarde sous format texte.</p>
-				</div>
-				<div class="carousel-item">
-					<h3>4. Personnalisation</h3>
-					<p>Choix du nom du fichier.</p>
-				</div>
-				<div class="carousel-item">
-					<h3>5. Choix de la palette</h3>
-					<p>Personnalisation des caractères ASCII.</p>
-				</div>
-				<div class="carousel-item">
-					<h3>6. Exécution en ligne de commande</h3>
-					<p>Utilisation flexible avec arguments.</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- Boutons pour navigation -->
-		<div class="controls">
-			<label for="slide-1">1</label>
-			<label for="slide-2">2</label>
-			<label for="slide-3">3</label>
-			<label for="slide-4">4</label>
-			<label for="slide-5">5</label>
-			<label for="slide-6">6</label>
-		</div>
-
-	</div>
-
-
-    <div id="fh5co-services" class="fh5co-bg-section">
-        <div class="container">
-            <div class="row row-pb-md">
-                <div class="fh5co-heading">
-                    <h2>Contexte du projet</h2>
-                    <div class="paragraphe">
-                        <p>Pour ce projet, je devais développer un programme capable de convertir des images PGM en ASCII Art en utilisant une palette de 
-                            caractères en fonction des niveaux de gris.</p>
-                        <p>Le projet devait être réalisé en une journée et demie et impliquait de travailler en équipe de deux personnes pour répondre 
-                            à un cahier des charges strict.</p>
-                    </div>
-
-                <h2>Étapes de développement</h2>
-                <p>Pour tout le développement, j'ai codé en c++ sur <strong>Visual Studio</strong></p>
-                <h3>1. Lecture de l'en-tête du fichier PGM</h3>
-                <p>La première étape a été de développer une fonction pour analyser l'en-tête d'une image PGM et extraire les informations essentielles telles que la largeur et la hauteur de l'image.</p>
-    
-                <h3>2. Conversion des niveaux de gris en caractères ASCII</h3>
-                <p>Ensuite, j'ai créé une fonction pour lire le reste du fichier et convertir les niveaux de gris en caractères ASCII selon une palette prédéfinie.</p>
-                <div class="palette-example">
-                    <p>Exemple de palette :</p>
-                    <pre>@%#*+=-:. </pre>
-                </div>
-    
-                <h3>3. Enregistrement de l'image ASCII</h3>
-                <p>Une fois la conversion réalisée, j'ai rajouté une fonctionnalité permettant d'enregistrer la version ASCII de l'image dans un fichier texte. 
-                    Cette fonctionnalité utilise les flux de sortie C++ comme <code>ofstream</code>.</p>
-    
-                <h3>4. Personnalisation du nom du fichier de sortie</h3>
-                <p>Un autre point important était que le client devait pouvoir choisir le nom du fichier 
-                    de sortie. De la même manière, grâce à une variable de type : <code>std::string</code>, j'ai pu stoker
-                     le nom du fichier et le réutiliser</p>
-    
-                <h3>5. Choix de la palette de caractères</h3>
-                <p>L'utilisateur pouvait aussi choisir la palette de caractères qu'il souhaitait utiliser pour la conversion. 
-                    Cette fonctionnalité a été ajouter via d'autres fonctions.</p>
-    
-                <h3>6. Exécution depuis la ligne de commande</h3>
-                <p>Enfin, j'ai fait en sorte que le programme puisse être exécuté en ligne de commande, avec des arguments. 
-                    Cela a offert une plus grande flexibilité à l'utilisateur.</p>
-    
-                <h2>Compétences mobilisées</h2>
-                <ul>
-                    <li>Implémenter des conceptions simples.</li>
-                    <li>Élaborer des conceptions simples.</li>
-                    <li>Faire des essais et évaluer leurs résultats en regard des spécifications.</li>
-                    <li>Développer des interfaces utilisateurs.</li>
-                    <li>Élaborer et implémenter des spécifications fonctionnelles et non fonctionnelles à partir des exigences.</li>
-                    <li>Adopter de bonnes pratiques de conception et de programmation.</li>
-                    <li>Vérifier et valider la qualité de l’application par des tests.</li>
-                    <li>Mobiliser les compétences interpersonnelles pour intégrer une équipe informatique.</li>
-                    <li>Rendre compte de son activité professionnelle.</li>
-                </ul>
-    
-                <h2>Retour critique</h2>
-                <p>Pour donner un regard critique sur ce projet, je dirais que dans le groupe, 
-                    nous aurions pu être plus rapides et mieux répartir les tâches. 
-                    Nous n'avons pas pu implémenter la dernière fonctionnalité qui consistait à réduire une image en faisant 
-                    la moyenne de couleur de chaque pixel.
-                Et J'aurais pu créer une interface utilisateur 
-                en QT ou en utilisant les MFC ( bibliothèque de classes en C++ encapsulant l'API Win32 de Windows)</p>
-    
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="IMGLOGOCENTER">
-                            <div class="image-container">
-                                <a href="images/img_pika1.png">
-                                    <img src="images/img_pika1.png" alt="Exemple numéro 1" class="img-responsive side-by-side">
-                                </a>
-                                <a href="images/img_pika2.png">
-                                    <img src="images/img_pika2.png" alt="Exemple numéro 1" class="img-responsive side-by-side">
-                                </a>
-                                <a href="images/img_pika3.png">
-                                    <img src="images/img_pika3.png" alt="Exemple numéro 1" class="img-responsive side-by-side">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <p><a href="PageProjet.html" class="btn btn-primary">Voir d'autres projets</a></p>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-		<!-- PARTIE SUR L'INVITATION A VENIR FAIRE UN PROJET AVEC MOI
-		<div id="fh5co-started">
+		<div id="fh5co-formation" class="fh5co-section">
 			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<span>Travaillons ensemble !</span>
-						<h2>Commencer un projet</h2>
-						<p><a href="PageContact.html" class="btn btn-default">Me contacter</a></p>
+				<div class="row animate-box" data-animate-effect="fadeInUp">
+					<div class="col-md-10 col-md-offset-1 text-center fh5co-heading textejustifié" style="margin-top: 40px;">
+						<h2>Étapes de développement</h2>
 					</div>
 				</div>
 			</div>
-		</div> -->
-
-</div>
-
-	<!-- FOOTER -->
-
-	<footer class="site-footer">
-		<div class="footer-content">
-			<p>Yanis MERIEM - PortFolio</p>
-			<p>&copy; 2016 Free HTML5. All Rights Reserved.</p>
-			<p>
-				Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://pixeden.com/" target="_blank">Pixeden</a> &amp; <a href="http://unsplash.com/" target="_blank">Unsplash
-
-			</p>
-			
-			<a href="https://www.linkedin.com/in/yanis-meriem/" target="_blank"><i class="icon-linkedin"></i></a>
 		</div>
-	</footer>
 
 
 
-<div class="gototop js-top">
-	<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-</div>
+		<!-- Radio buttons invisibles pour chaque slide -->
 
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
-<!-- countTo -->
-<script src="js/jquery.countTo.js"></script>
-<!-- Magnific Popup -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/magnific-popup-options.js"></script>
-<!-- Main -->
-<script src="js/main.js"></script>
+		<div class="alignementBoutonCentre animate-box" data-animate-effect="fadeInUp">
 
-</body>
+			<input type="radio" name="slide" id="slide-1" checked>
+			<label for="slide-1" class="controls">1</label>
+
+			<input type="radio" name="slide" id="slide-2">
+			<label for="slide-2" class="controls">2</label>
+
+			<input type="radio" name="slide" id="slide-3">
+			<label for="slide-3" class="controls">3</label>
+
+			<input type="radio" name="slide" id="slide-4">
+			<label for="slide-4" class="controls">4</label>
+
+			<input type="radio" name="slide" id="slide-5">
+			<label for="slide-5" class="controls">5</label>
+
+
+			<!-- Conteneur du carousel -->
+			<div class="carousel-container">
+				<div class="carousel">
+					<div class="carousel-item">
+						<h3>1. Lecture de l'en-tête</h3>
+						<p>La première étape a été de développer une fonction pour analyser l'en-tête d'une image PGM et extraire les informations essentielles telles que la largeur et la hauteur de l'image.</p>
+					</div>
+					<div class="carousel-item">
+						<h3>2. Conversion en ASCII</h3>
+						<p>Ensuite, j'ai créé une fonction pour lire le reste du fichier et convertir les niveaux de gris en caractères ASCII selon une palette prédéfinie.</p>
+						<div class="palette-example" style="width: 230px; margin: 0 auto; text-align: center;">
+							<p>Exemple de palette :</p>
+							<pre style="font-size: 20px; padding: 5px; text-align: center;"> @ % # * + = - : . </pre>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<h3>3. Enregistrement</h3>
+						<p>Une fois la conversion réalisée, j'ai rajouté une fonctionnalité permettant d'enregistrer la version ASCII de l'image dans un fichier texte. 
+							Cette fonctionnalité utilise les flux de sortie C++ comme <code>ofstream</code>.</p>
+					</div>
+					<div class="carousel-item">
+						<h3>4. Personnalisation du nom du fichier de sortie</h3>
+						<p>Un autre point important était que le client devait pouvoir choisir le nom du fichier 
+							de sortie. De la même manière, grâce à une variable de type : <code>std::string</code>, j'ai pu stoker
+							 le nom du fichier et le réutiliser</p>
+					</div>
+					<div class="carousel-item">
+						<h3>5. Exécution depuis la ligne de commande</h3>
+						<p>Enfin, j'ai fait en sorte que le programme puisse être exécuté en ligne de commande, avec des arguments. 
+							Cela a offert une plus grande flexibilité à l'utilisateur.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div id="fh5co-formation" class="fh5co-section">
+			<div class="container">
+				<div class="row animate-box" data-animate-effect="fadeInUp">
+					<div class="col-md-12 col-md-offset-0 text-center fh5co-heading espaceAugmente">
+						<h1></h1>
+						<h2>Regard critique</h2>
+						<p style="text-align: justify;">Pour donner un regard critique sur ce projet, je dirais que dans le groupe, 
+							nous aurions pu être plus rapides et mieux répartir les tâches. 
+							Nous n'avons pas pu implémenter la dernière fonctionnalité qui consistait à réduire une image en faisant 
+							la moyenne de couleur de chaque pixel.
+							Et J'aurais pu créer une interface utilisateur 
+							en QT ou en utilisant les MFC ( bibliothèque de classes en C++ encapsulant l'API Win32 de Windows)</p>
+						
+						<p><a href="PageEcologie.html" class="btn btn-primary">En savoir plus sur le numérique responsable</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="site-footer">
+			<div class="footer-content">
+				<p>Yanis MERIEM - PortFolio</p>
+				<p>&copy; 2016 Free HTML5. All Rights Reserved.</p>
+				<p>
+					Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://pixeden.com/" target="_blank">Pixeden</a> &amp; <a href="http://unsplash.com/" target="_blank">Unsplash
+		
+					</p>
+				
+				<a href="https://www.linkedin.com/in/yanis-meriem/" target="_blank"><i class="icon-linkedin"></i></a>
+			</div>
+		</footer>	
+		</div>
+
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
 
