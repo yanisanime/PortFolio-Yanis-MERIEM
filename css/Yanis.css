@@ -701,11 +701,13 @@ margin-bottom: 40px;
 .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 600%; /* 100% * nombre de slides */
+    width: 100%; /* 100% * nombre de slides */
+    flex-wrap: nowrap;
 }
 
 .carousel-item {
     flex: 0 0 100%; /* Chaque slide prend 100% de la largeur du conteneur */
+    min-width: 100%; /* Largeur minimale */
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -713,13 +715,26 @@ margin-bottom: 40px;
     border-radius: 25px;
     transition: background-color 0.3s ease;
     /*je veux beaucoup plus haut*/
-    height: 300px;
+    height: 320px;
     
 }
 
 .carousel-item h3 {
     margin-bottom: 15px;
     color: rgba(211, 181, 241, 0.9);
+}
+
+.carousel-item li {
+    margin-bottom: 10px;
+    color: rgba(211, 181, 241, 0.9);
+    /*je veux chaque élément li aligné à gauche*/
+    text-align: left;
+    /* margin-left: 300px; */
+}
+
+.carousel-item li:hover {
+    /*je veux qu'on les souligne*/
+    text-decoration: underline;
 }
 
 /* Cacher les boutons radio */
@@ -809,4 +824,24 @@ input[type="radio"]:checked + label {
 .radio-buttons input[type="radio"]:checked:nth-of-type(5) ~ .alignementBoutonCentre label:nth-of-type(5) {
     background-color: rgba(211, 181, 241, 0.9);
     color: white;
+}
+
+
+/*pour aligné une image et un texte dans le carousel*/
+.carousel-item-content {
+    display: flex; /* Permet d'aligner l'image et le texte en ligne */
+    align-items: center; /* Centre verticalement */
+    justify-content: space-between; /* Espacement entre image et texte */
+    gap: 20px; /* Espace entre l'image et le texte */
+    text-align: justify; /* Justifier le texte */
+}
+
+.carousel-item img {
+    width: 25%; /* Taille de l'image */
+    height: auto;
+    border-radius: 10px; /* Coins arrondis (optionnel) */
+    margin-bottom: 5px;
+}
+.carousel-item p {
+    flex: 1; /* Permet au texte de prendre tout l'espace restant */
 }
