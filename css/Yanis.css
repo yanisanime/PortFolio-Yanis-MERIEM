@@ -362,7 +362,7 @@ margin-bottom: 40px;
     transition: opacity 0.5s ease, visibility 0.5s ease;
     opacity: 0;
     visibility: hidden;
-    text-align: justify;
+    text-align: left;
     /*changer la taille du texte en plus petit*/
     font-size: 15px;
 }
@@ -715,7 +715,7 @@ margin-bottom: 40px;
     border-radius: 25px;
     transition: background-color 0.3s ease;
     /*je veux beaucoup plus haut*/
-    height: 350px;
+    /* height: 350px; */
     
 }
 

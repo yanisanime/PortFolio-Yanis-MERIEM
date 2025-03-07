@@ -105,7 +105,7 @@
 			<div class="container">
 				<div class="row animate-box" data-animate-effect="fadeInUp">
 					<div class="col-md-12 col-md-offset-0 text-center fh5co-heading textejustifié" style="margin-top: 40px;">
-						<h2>Contexte du projet</h2>
+						<h2 class="espaceAugmente">Contexte du projet</h2>
 						
 						<p style="margin: 40px;">
 							Pour ce projet, je devais développer un programme capable de convertir des images PGM en ASCII Art en utilisant une palette de 
@@ -219,15 +219,14 @@
 			<input type="radio" name="slide" id="slide-4">
 			<input type="radio" name="slide" id="slide-5">
 
-
 			<!-- Conteneur du carousel -->
 			<div class="carousel-container">
 				<div class="carousel">
-					<div class="carousel-item">
+					<div class="carousel-item" style="height: 250px;">
 						<h3>Lecture de l'en-tête</h3>
 						<p>La première étape a été de développer une fonction pour analyser l'en-tête d'une image PGM et extraire les informations essentielles telles que la largeur et la hauteur de l'image.</p>
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item" style="height: 250px;">
 						<h3>Conversion en ASCII</h3>
 						<p>Ensuite, j'ai créé une fonction pour lire le reste du fichier et convertir les niveaux de gris en caractères ASCII selon une palette prédéfinie.</p>
 						<div class="palette-example" style="width: 230px; margin: 0 auto; text-align: center;">
@@ -235,18 +234,18 @@
 							<pre style="font-size: 20px; padding: 5px; text-align: center;"> @ % # * + = - : . </pre>
 						</div>
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item" style="height: 250px;">
 						<h3>Enregistrement</h3>
 						<p>Une fois la conversion réalisée, j'ai rajouté une fonctionnalité permettant d'enregistrer la version ASCII de l'image dans un fichier texte. 
 							Cette fonctionnalité utilise les flux de sortie C++ comme <code>ofstream</code>.</p>
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item" style="height: 250px;">
 						<h3>Personnalisation du nom du fichier de sortie</h3>
 						<p>Un autre point important était que le client devait pouvoir choisir le nom du fichier 
 							de sortie. De la même manière, grâce à une variable de type : <code>std::string</code>, j'ai pu stoker
 							 le nom du fichier et le réutiliser</p>
 					</div>
-					<div class="carousel-item">
+					<div class="carousel-item" style="height: 250px;">
 						<h3>Exécution depuis la ligne de commande</h3>
 						<p>Enfin, j'ai fait en sorte que le programme puisse être exécuté en ligne de commande, avec des arguments. 
 							Cela a offert une plus grande flexibilité à l'utilisateur.</p>
@@ -274,10 +273,10 @@
 
 				<div class="row animate-box" data-animate-effect="fadeInUp" style="margin-bottom: 50px;">
 					<div class="col-md-6">
-						<img src="images/img_pika1.png" alt="Image 1" class="img-responsive" style="width: 80%; height: auto; margin-top: 0;">
+						<img src="images/img_pika1.png" alt="Image 1" class="img-responsive beautiful-image" style="width: 80%; height: auto; margin-top: 0;">
 					</div>
 					<div class="col-md-6">
-						<img src="images/img_pika3.png" alt="Image 2" class="img-responsive" style="width: 100%; height: auto;margin-top: 0;">
+						<img src="images/img_pika3.png" alt="Image 2" class="img-responsive beautiful-image" style="width: 100%; height: auto;margin-top: 0;">
 
 						<p style="margin-top: 15px; font-size: 18px; text-align: justify;">
 							L'algorithme de conversion implémenté permet de transposer les niveaux de gris d'une image PGM en caractères ASCII.
