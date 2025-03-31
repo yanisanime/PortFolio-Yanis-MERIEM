@@ -2,7 +2,7 @@
 :root {
   --CouleurVive: #3073e2;
   --CouleurFondBulle: #3073e2;
-  --CouleurGris: rgba(42, 54, 59, 0.9);
+  --CouleurGris: rgba(19, 23, 24, 0.9);
   /* --HeaderBackground: rgba(42, 54, 59, 0.9); */
   --HeaderBackgroundImage: url("../images/background/fond.png");
   --CouleurRouge: #bf1919;
@@ -614,7 +614,7 @@ item-list ul {
 /*css ici pour représenter des compétences dans des petites bulle rose traansparant en fond et rose foncé pour la couleur du texte*/
 
 .competenceProj {
-  background-color: rgba(55, 54, 56, 0.9);
+  background-color: var(--CouleurFondBulle);
   color: rgba(248, 241, 255, 0.9);
   padding: 10px 20px; /* Espacement pour ajuster la taille */
   border-radius: 50px; /* Rend la bulle ovale */
@@ -643,7 +643,7 @@ item-list ul {
 .competenceProj h3 {
   font-size: 20px;
   opacity: 1;
-  color: var(--CouleurFondBulle);
+  color: white;
   margin: 0; /* Supprime la marge par défaut des h3 */
   padding: 5px; /* Ajout d’un padding pour éviter que le texte touche les bords */
   text-align: center; /* Assure que le texte est centré dans le conteneur */
@@ -860,8 +860,11 @@ input[type="radio"]:checked + label {
   color: var(--CouleurRouge);
   transition: transform 0.5s;
   display: inline-block; /* Ajouté pour s'assurer que transform fonctionne */
+  text-decoration: none; /* Enlève le soulignement par défaut */
 }
 
 .codeCitation:hover {
   transform: scale(1.2); /* Correction ici */
+  text-decoration: none; /* Enlève le soulignement par défaut */
+  color: var(--CouleurRouge);
 }

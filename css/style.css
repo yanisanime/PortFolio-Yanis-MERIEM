@@ -281,14 +281,14 @@ figure {
   position: relative;
 }
 
-#fh5co-header a {
+/* #fh5co-header a {
   color: rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-#fh5co-header a:hover {
+} */
+/* #fh5co-header a:hover {
   color: white;
   border-bottom: 1px solid white;
-}
+} */
 
 .fh5co-cover {
   height: 900px;
@@ -310,6 +310,21 @@ figure {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/*pour mettre une filtre et assombrir l'image*/
+.fh5co-cover .overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+background-color: rgba(47, 47, 47, 0.4); /* Gris avec opacité */
+z-index: 1; /* Pour s'assurer que ce filtre soit au-dessus de l'image */
+
+
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
