@@ -1,860 +1,867 @@
-
-
-.paragraphe{
-    font-size: 20px;
-    color: #000;
-    text-align: justify;
+/* //Définition des couleurs pour le projet */
+:root {
+  --CouleurVive: #3073e2;
+  --CouleurFondBulle: #3073e2;
+  --CouleurGris: rgba(42, 54, 59, 0.9);
+  /* --HeaderBackground: rgba(42, 54, 59, 0.9); */
+  --HeaderBackgroundImage: url("../images/background/fond.png");
+  --CouleurRouge: #bf1919;
 }
 
-.EnGras{
-    font-weight: bold;
+.paragraphe {
+  font-size: 20px;
+  color: #000;
+  text-align: justify;
 }
 
-.maListe{
-    margin-bottom: 30px; /* Add margin-bottom to create empty space below */
+.EnGras {
+  font-weight: bold;
+}
+
+.maListe {
+  margin-bottom: 30px; /* Add margin-bottom to create empty space below */
 }
 
 .algorithmes-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    margin-bottom: 50px; /* Add margin-bottom to create empty space below */
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 50px; /* Add margin-bottom to create empty space below */
 }
 
-.algorithmes-table th, .algorithmes-table td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: left;
+.algorithmes-table th,
+.algorithmes-table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
 }
 
 .algorithmes-table th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .algorithmes-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 .algorithmes-table tr:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 .ACoteImg {
-    margin-left: 500px;
+  margin-left: 500px;
 }
 
-
 item-list ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .item-list li {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: flex-start;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .item-list a {
-    text-decoration: none;
-    margin-right: 15px;
+  text-decoration: none;
+  margin-right: 15px;
 }
 
 .item-list img {
-    max-width: 100px; /* Adjust as necessary */
-    height: auto;
-    border-radius: 10px; /* Optional: Rounded corners for images */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  max-width: 100px; /* Adjust as necessary */
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
 .item-list p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-
-
-
 .beautiful-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px; /* Optional: Rounded corners for images */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-    margin-bottom: 20px; /* Add margin-bottom to create empty space below */
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px; /* Optional: Rounded corners for images */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  margin-bottom: 20px; /* Add margin-bottom to create empty space below */
 }
 
 .beautiful-image:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
 .fh5co-project {
-    margin-bottom: 30px; /* Add space between the rows */
-    text-align: center; /* Center align the images within their columns */
+  margin-bottom: 30px; /* Add space between the rows */
+  text-align: center; /* Center align the images within their columns */
 }
 
 .fh5co-project a {
-    display: block; /* Ensure the anchor tag spans the full width of the column */
+  display: block; /* Ensure the anchor tag spans the full width of the column */
 }
-
 
 .content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.TexteADroite, .TexteAGauche {
-    width: 90%; /* Ajustez la largeur selon vos besoins */
-    margin: 20px 0;
+.TexteADroite,
+.TexteAGauche {
+  width: 90%; /* Ajustez la largeur selon vos besoins */
+  margin: 20px 0;
 }
 
 .TexteADroite {
-    text-align: justify;
-    align-self: flex-end;
-    width: 800px;
+  text-align: justify;
+  align-self: flex-end;
+  width: 800px;
 }
 
 .TexteAGauche {
-    text-align: justify;
-    align-self: flex-start;
-    width: 800px;
-
+  text-align: justify;
+  align-self: flex-start;
+  width: 800px;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espace entre les images */
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les images */
 }
 
 .side-by-side {
-    width: 90px; /* Ajustez la largeur selon vos besoins */
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+  width: 90px; /* Ajustez la largeur selon vos besoins */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
 .side-by-side:hover {
-    transform: scale(1.05); /* Effet d'agrandissement au survol */
+  transform: scale(1.05); /* Effet d'agrandissement au survol */
 }
 
-.imgCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.imgCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-
 
 .beautiful-image-inGame {
-    width: 500px;
-    height: auto;
-    border-radius: 15px; /* Optional: Rounded corners for images */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-    margin-bottom: 20px; /* Add margin-bottom to create empty space below */
+  width: 500px;
+  height: auto;
+  border-radius: 15px; /* Optional: Rounded corners for images */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  margin-bottom: 20px; /* Add margin-bottom to create empty space below */
 }
 
 .beautiful-image-inGame:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
-
-
-
 .site-footer {
-    background-color:  rgba(42, 54, 59, 0.9);
-    text-align: center;
-    padding: 20px 0;
-    margin-top: auto; /* Pousse le footer en bas de la page */
-    color: white;
+  background-color: var(--CouleurGris);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Pousse le footer en bas de la page */
+  color: white;
 }
 
 .site-footer-accueil {
-    background-color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: auto; /* Pousse le footer en bas de la page */
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Pousse le footer en bas de la page */
 }
 
 .footer-content p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .footer-content a {
-    color:rgba(166, 142, 190, 1);
-    text-decoration: none;
+  color: var(--CouleurVive);
+  text-decoration: none;
 }
 
 .footer-content a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-
 .beautiful-image-eco {
-    width: 400px;
-    height: auto;
-    border-radius: 15px; /* Optional: Rounded corners for images */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-    margin-bottom: 20px; /* Add margin-bottom to create empty space below */
+  width: 400px;
+  height: auto;
+  border-radius: 15px; /* Optional: Rounded corners for images */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  margin-bottom: 20px; /* Add margin-bottom to create empty space below */
 }
 
 .beautiful-image-eco:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
-
 
 .item-list-eco {
-    /*Je veux un espace avec ce qu'il y a au dessus*/
-    margin-top: 40px;
+  /*Je veux un espace avec ce qu'il y a au dessus*/
+  margin-top: 40px;
 }
 
-
 .item-list-eco ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .item-list-eco li {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: flex-start;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .item-list-eco a {
-    text-decoration: none;
-    margin-right: 15px;
+  text-decoration: none;
+  margin-right: 15px;
 }
 
 .item-list-eco img {
-    
-    height: auto;
-    border-radius: 10px; /* Optional: Rounded corners for images */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    /*je veux qu'il y ai un espace à droite de l'image entre l'image et ce qu'il y a a coté*/
-    margin-right: 80px;
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  /*je veux qu'il y ai un espace à droite de l'image entre l'image et ce qu'il y a a coté*/
+  margin-right: 80px;
 }
 
 .item-list-eco p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-
-.TexteCenter{
-    text-align: center;
+.TexteCenter {
+  text-align: center;
 }
-
 
 .UneSeulLigne {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
-
-.CV{
-    margin-top: 20px;
-    margin-bottom: 50px; /* Add margin-bottom to create empty space below */
+.CV {
+  margin-top: 20px;
+  margin-bottom: 50px; /* Add margin-bottom to create empty space below */
 }
-
-
-
 
 .beautiful-image-logo {
-    width: 100px;
-    height: auto;
-    border-radius: 15px; /* Optional: Rounded corners for images */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-    margin-bottom: 20px; /* Add margin-bottom to create empty space below */
-    
+  width: 100px;
+  height: auto;
+  border-radius: 15px; /* Optional: Rounded corners for images */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  margin-bottom: 20px; /* Add margin-bottom to create empty space below */
 }
 
 .beautiful-image-logo:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
-.IMGLOGOCENTER{
-text-align: center;
-margin-bottom: 40px;
+.IMGLOGOCENTER {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 /*pour les icone de la page d'accueil*/
 
 .service {
-   /* background-color: rgb(100, 116, 122);*/
-   background-color: rgb(166, 142, 190);
-    color: white;
-    padding: 20px;
-    margin: 10px; 
-    border-radius: .75rem;
-    text-align: center;
-    margin-bottom: 50px;
-    transition: transform 0.5s, box-shadow 0.5s; /* Ajout d'une transition pour l'état normal */  
+  /* background-color: rgb(100, 116, 122);*/
+  background-color: var(--CouleurFondBulle);
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 0.75rem;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: transform 0.5s, box-shadow 0.5s; /* Ajout d'une transition pour l'état normal */
 }
 .service .icon {
-    font-size: 40px; 
-    margin-bottom: 8px; 
-    text-align: center;
+  font-size: 40px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .service:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-    transition: 0.5s;
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  transition: 0.5s;
 }
-
 
 /*pour les icone de la page d'accueil*/
 .competence {
-    background-color: rgba(166, 142, 190, 0.9);
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 15px;
-    text-align: center;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: visible; /* Permet de voir la description sans affecter les autres */
+  background-color: var(--CouleurFondBulle);
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: visible; /* Permet de voir la description sans affecter les autres */
 }
 
 .competence .icon {
-    font-size: 50px; /* Augmentation de la taille de l'icône */
-    margin-bottom: 15px; /* Augmentation de la marge inférieure */
-    text-align: center;
+  font-size: 50px; /* Augmentation de la taille de l'icône */
+  margin-bottom: 15px; /* Augmentation de la marge inférieure */
+  text-align: center;
 }
 
 .competence:hover {
-    transform: scale(1.1);
-    z-index: 10;
-    background-color: rgba(166, 142, 190, 1);
+  transform: scale(1.1);
+  z-index: 10;
+  background-color: var(--CouleurFondBulle);
 }
 
 .competence-description {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%; /* Set width to 100% to match the parent competence */
-    background-color: rgba(166, 142, 190, 1);
-    color: rgb(0, 0, 0);
-    padding: 15px; /*hauteur de la box*/
-    min-height: 170px;
-    border-radius: 10px;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    opacity: 0;
-    visibility: hidden;
-    text-align: left;
-    /*changer la taille du texte en plus petit*/
-    font-size: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Set width to 100% to match the parent competence */
+  background-color: var(--CouleurFondBulle);
+  color: rgb(0, 0, 0);
+  padding: 15px; /*hauteur de la box*/
+  min-height: 170px;
+  border-radius: 10px;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  /*changer la taille du texte en plus petit*/
+  font-size: 15px;
 }
 
 .competence:hover .competence-description {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
-
-.competence h3 {  
-    margin: 0; /* Supprime la marge par défaut des h3 */  
-    text-align: center; /* Assure que le texte est centré dans le conteneur */  
+.competence h3 {
+  margin: 0; /* Supprime la marge par défaut des h3 */
+  text-align: center; /* Assure que le texte est centré dans le conteneur */
 }
 
 .competenceLigne {
-    /*pour augmenter l'espace avec ce qu'il y a au dessus*/
-    margin-top: 55px;
-    margin-bottom: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
+  /*pour augmenter l'espace avec ce qu'il y a au dessus*/
+  margin-top: 55px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
 
 /*pour l'invers de hover*/
 
-
-
 .competence.color-4 {
-    background-color: #f39c12;
-    color: white;
+  background-color: #f39c12;
+  color: white;
 }
 
 .competence.color-5 {
-    background-color: #e74c3c;
-    color: white;
+  background-color: #e74c3c;
+  color: white;
 }
 
 .competence.color-6 {
-    background-color: #3498db;
-    color: white;
+  background-color: #3498db;
+  color: white;
 }
 
 .competence.color-7 {
-    background-color: #2ecc71;
-    color: white;
+  background-color: #2ecc71;
+  color: white;
 }
 
 .competence.color-8 {
-    background-color: #9b59b6;
-    color: white;
+  background-color: #9b59b6;
+  color: white;
 }
-
-
-
 
 /* Timeline Styles */
 #fh5co-timeline {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 0;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 11px;
-    background: #ccc;
-    left: 50%;
-    margin-left: -2px;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 11px;
+  background: #ccc;
+  left: 50%;
+  margin-left: -2px;
 }
 
 .timeline-item {
-    padding: 20px 40px;
-    position: relative;
-    width: 50%;
-    box-sizing: border-box;
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
 }
 
 .timeline-item:nth-child(odd) {
-    left: 0;
-    text-align: right;
+  left: 0;
+  text-align: right;
 }
 
 .timeline-item:nth-child(even) {
-    left: 50%;
-    text-align: left;
+  left: 50%;
+  text-align: left;
 }
 
 .timeline-year {
-    background: rgb(166, 142, 190);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
+  background: var(--CouleurFondBulle);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .timeline-content {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    position: relative;
-    margin-top: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 20px;
 }
 
 .timeline-content h3 {
-    margin-top: 0;
-    color: #333;
+  margin-top: 0;
+  color: #333;
 }
 
 .timeline-content p {
-    color: #666;
+  color: #666;
 }
 
 .timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 31px;
-    height: 31px;
-    background: #6e6e6e;
-    border: 4px solid #fff;
-    border-radius: 50%;
-    top: 20px;
-    left: 50%;
-    transform: translateX(10%);
-    z-index: 1;
-    border: solid 4px white;
+  content: "";
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  background: #6e6e6e;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(10%);
+  z-index: 1;
+  border: solid 4px white;
 }
 
 .timeline-item:nth-child(odd)::after {
-    left: auto;
-    right: -14px;
+  left: auto;
+  right: -14px;
 }
 
 .timeline-item:nth-child(even)::after {
-    left: -14px;
+  left: -14px;
 }
-
-
 
 /*css pour afficher l'image de mon CV*/
 
-.CVImage{
-    width: 400px;
-    height: auto;
-    border-radius: 15px; /* Optional: Rounded corners for images */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-    margin-bottom: 20px; /* Add margin-bottom to create empty space below */
+.CVImage {
+  width: 400px;
+  height: auto;
+  border-radius: 15px; /* Optional: Rounded corners for images */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  margin-bottom: 20px; /* Add margin-bottom to create empty space below */
 }
 
 .CVImage:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
 /*pour mettre un fond en gris*/
 
-.blancfond{
-    background: rgba(0, 0, 0, 0.05);
+.blancfond {
+  background: rgba(0, 0, 0, 0.05);
 }
 
 /*pour mettre un fond en blanc*/
-.backgroundBlanc{
-    background: rgba(255, 255, 255, 1);
+.backgroundBlanc {
+  background: rgba(255, 255, 255, 1);
 }
 
 /*pour justifier le text*/
 
-.textejustifié p{
-    text-align: justify;
+.textejustifié p {
+  text-align: justify;
 }
 
-.espaceAugmente h2{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.espaceAugmente h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
 
 /*pour donne la couleur rose au menu déroulant */
 
 .dropdown-couleurRose li a {
-    color:  rgba(166, 142, 190, 1);
+  color: var(--CouleurVive);
 }
-
-
 
 /*pour les compétences d'écologie*/
 
 .competenceEco {
-    background-color: rgba(166, 142, 190, 0.9);
-    color: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 50%; /* Changer la forme en cercle */
-    text-align: center;
-    margin-bottom: 50px;
-    width: 300px; /* Définir une largeur fixe pour le cercle */
-    height: 300px; /* Définir une hauteur fixe pour le cercle */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden; /* Masquer le contenu qui dépasse */
+  background-color: var(--CouleurFondBulle);
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 50%; /* Changer la forme en cercle */
+  text-align: center;
+  margin-bottom: 50px;
+  width: 300px; /* Définir une largeur fixe pour le cercle */
+  height: 300px; /* Définir une hauteur fixe pour le cercle */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden; /* Masquer le contenu qui dépasse */
 }
 
 .competenceEco .icon {
-    font-size: 50px; /* Augmentation de la taille de l'icône */
-    margin-bottom: 15px; /* Augmentation de la marge inférieure */
-    text-align: center;
+  font-size: 50px; /* Augmentation de la taille de l'icône */
+  margin-bottom: 15px; /* Augmentation de la marge inférieure */
+  text-align: center;
 }
 
 .competenceEco:hover {
-    transform: scale(1.2); /* Grossir le cercle au survol */
-    z-index: 10;
-    background-color: rgba(166, 142, 190, 1);
+  transform: scale(1.2); /* Grossir le cercle au survol */
+  z-index: 10;
+  background-color: var(--CouleurFondBulle);
 }
 
 .competenceEco-description {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Fond noir transparent */
-    color: white;
-    padding: 10px;
-    border-radius: 50%; /* Assurer que le descriptif reste dans un cercle */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fond noir transparent */
+  color: white;
+  padding: 10px;
+  border-radius: 50%; /* Assurer que le descriptif reste dans un cercle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  font-size: 15px;
 }
 
 .competenceEco:hover .competenceEco-description {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
-.competenceEco h3 {  
-    margin: 0; /* Supprime la marge par défaut des h3 */  
-    text-align: center; /* Assure que le texte est centré dans le conteneur */  
+.competenceEco h3 {
+  margin: 0; /* Supprime la marge par défaut des h3 */
+  text-align: center; /* Assure que le texte est centré dans le conteneur */
 }
 
 .competenceEcoLigne {
-    /*pour augmenter l'espace avec ce qu'il y a au dessus*/
-    margin-top: 55px;
-    margin-bottom: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
+  /*pour augmenter l'espace avec ce qu'il y a au dessus*/
+  margin-top: 55px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
 
 /*css ici pour représenter des compétences dans des petites bulle rose traansparant en fond et rose foncé pour la couleur du texte*/
 
 .competenceProj {
-    background-color: rgba(55, 54, 56, 0.9);
-    color: rgba(248, 241, 255, 0.9);
-    padding: 10px 20px; /* Espacement pour ajuster la taille */
-    border-radius: 50px; /* Rend la bulle ovale */
-    text-align: center;
-    margin-bottom: 50px;
-    min-width: 50px; /* Largeur minimale */
-    max-width: 500px; /* Largeur maximale pour éviter les bulles trop grandes */
-    height: auto; /* Hauteur ajustable */
-    display: inline-flex; /* Permet à la bulle de s’adapter au texte */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-    opacity: 0.8;
-    margin: 10px;
-    word-wrap: break-word; /* Permet le retour à la ligne si le texte est trop long */
+  background-color: rgba(55, 54, 56, 0.9);
+  color: rgba(248, 241, 255, 0.9);
+  padding: 10px 20px; /* Espacement pour ajuster la taille */
+  border-radius: 50px; /* Rend la bulle ovale */
+  text-align: center;
+  margin-bottom: 50px;
+  min-width: 50px; /* Largeur minimale */
+  max-width: 500px; /* Largeur maximale pour éviter les bulles trop grandes */
+  height: auto; /* Hauteur ajustable */
+  display: inline-flex; /* Permet à la bulle de s’adapter au texte */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  opacity: 0.8;
+  margin: 10px;
+  word-wrap: break-word; /* Permet le retour à la ligne si le texte est trop long */
 }
 
 .competenceProj:hover {
-    transform: scale(1.2); /* Grossir le cercle au survol */
-    z-index: 10;
+  transform: scale(1.2); /* Grossir le cercle au survol */
+  z-index: 10;
 }
 
 .competenceProj h3 {
-    font-size: 20px;
-    opacity: 1;
-    color: rgba(211, 181, 241, 0.9);
-    margin: 0; /* Supprime la marge par défaut des h3 */
-    padding: 5px; /* Ajout d’un padding pour éviter que le texte touche les bords */
-    text-align: center; /* Assure que le texte est centré dans le conteneur */
+  font-size: 20px;
+  opacity: 1;
+  color: var(--CouleurFondBulle);
+  margin: 0; /* Supprime la marge par défaut des h3 */
+  padding: 5px; /* Ajout d’un padding pour éviter que le texte touche les bords */
+  text-align: center; /* Assure que le texte est centré dans le conteneur */
 }
 
 .competenceProjLigne {
-    /*pour augmenter l'espace avec ce qu'il y a au dessus*/
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    gap: 15px; /* Ajoute un espacement entre les bulles */
+  /*pour augmenter l'espace avec ce qu'il y a au dessus*/
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 15px; /* Ajoute un espacement entre les bulles */
 }
-
 
 /*pour la présentation des étape du projet */
 
 /* Style de base pour le carousel */
 .carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 15px;
 }
 
 .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%; /* 100% * nombre de slides */
-    flex-wrap: nowrap;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* 100% * nombre de slides */
+  flex-wrap: nowrap;
 }
 
 .carousel-item {
-    flex: 0 0 100%; /* Chaque slide prend 100% de la largeur du conteneur */
-    min-width: 100%; /* Largeur minimale */
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-    /*je veux beaucoup plus haut*/
-    /* height: 350px; */
-    
+  flex: 0 0 100%; /* Chaque slide prend 100% de la largeur du conteneur */
+  min-width: 100%; /* Largeur minimale */
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  /*je veux beaucoup plus haut*/
+  /* height: 350px; */
 }
 
 .carousel-item h3 {
-    margin-bottom: 15px;
-    color: rgba(211, 181, 241, 0.9);
+  margin-bottom: 15px;
+  color: var(--CouleurFondBulle);
 }
 
 .carousel-item li {
-    margin-bottom: 10px;
-    color: rgba(211, 181, 241, 0.9);
-    /*je veux chaque élément li aligné à gauche*/
-    text-align: left;
-    /* margin-left: 300px; */
+  margin-bottom: 10px;
+  color: var(--CouleurFondBulle);
+  /*je veux chaque élément li aligné à gauche*/
+  text-align: left;
+  /* margin-left: 300px; */
 }
 
-.souligner{
-    color: rgba(211, 181, 241, 0.9);
+.souligner {
+  color: var(--CouleurFondBulle);
 }
 
 .souligner a:hover {
-    /*je veux qu'on les souligne*/
-    text-decoration: underline;
+  /*je veux qu'on les souligne*/
+  text-decoration: underline;
 }
 
 /* Cacher les boutons radio */
 input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 /* Style des boutons de navigation */
 .controls {
-    text-align: center;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.05);
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    margin: 0;
+  text-align: center;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin: 0;
 }
 
-
 .controls:hover {
-    background-color: rgba(106, 13, 173, 0.3);
-    opacity: 0.8;
-    color: white;
+  background-color: var(--CouleurFondBulle);
+  opacity: 0.8;
+  color: white;
 }
 
 .controls label {
-    font-size: 1.5rem;
-    padding: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 0 5px;
-    border-radius: 5px;
-    background-color: #ddd;
+  font-size: 1.5rem;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 5px;
+  border-radius: 5px;
+  background-color: #ddd;
 }
 
 .controls label:hover {
-    background-color: #444;
-    color: #fff;
+  background-color: #444;
+  color: #fff;
 }
 
 input[type="radio"]:checked + label {
-    background-color: rgba(211, 181, 241, 0.9);
-    color: #fff; /* Texte en blanc */
+  background-color: var(--CouleurFondBulle);
+  color: #fff; /* Texte en blanc */
 }
-
 
 /* Lorsque chaque radio est sélectionné, déplacer le carousel */
 /* Lorsque chaque radio est sélectionné, déplacer le carousel */
 #slide-1:checked ~ .carousel-container .carousel {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 #slide-2:checked ~ .carousel-container .carousel {
-    transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 #slide-3:checked ~ .carousel-container .carousel {
-    transform: translateX(-200%);
+  transform: translateX(-200%);
 }
 
 #slide-4:checked ~ .carousel-container .carousel {
-    transform: translateX(-300%);
+  transform: translateX(-300%);
 }
 
 #slide-5:checked ~ .carousel-container .carousel {
-    transform: translateX(-400%);
+  transform: translateX(-400%);
 }
 
 #slide-6:checked ~ .carousel-container .carousel {
-    transform: translateX(-500%);
+  transform: translateX(-500%);
 }
-
-
 
 .alignementBoutonCentre {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
-
 
 /* Appliquer un style spécial quand un bouton est sélectionné */
-.radio-buttons input[type="radio"]:checked:nth-of-type(1) ~ .alignementBoutonCentre label:nth-of-type(1),
-.radio-buttons input[type="radio"]:checked:nth-of-type(2) ~ .alignementBoutonCentre label:nth-of-type(2),
-.radio-buttons input[type="radio"]:checked:nth-of-type(3) ~ .alignementBoutonCentre label:nth-of-type(3),
-.radio-buttons input[type="radio"]:checked:nth-of-type(4) ~ .alignementBoutonCentre label:nth-of-type(4),
-.radio-buttons input[type="radio"]:checked:nth-of-type(5) ~ .alignementBoutonCentre label:nth-of-type(5),
-.radio-buttons input[type="radio"]:checked:nth-of-type(6) ~ .alignementBoutonCentre label:nth-of-type(6) {
-    background-color: rgba(211, 181, 241, 0.9);
-    color: white;
+.radio-buttons
+  input[type="radio"]:checked:nth-of-type(1)
+  ~ .alignementBoutonCentre
+  label:nth-of-type(1),
+.radio-buttons
+  input[type="radio"]:checked:nth-of-type(2)
+  ~ .alignementBoutonCentre
+  label:nth-of-type(2),
+.radio-buttons
+  input[type="radio"]:checked:nth-of-type(3)
+  ~ .alignementBoutonCentre
+  label:nth-of-type(3),
+.radio-buttons
+  input[type="radio"]:checked:nth-of-type(4)
+  ~ .alignementBoutonCentre
+  label:nth-of-type(4),
+.radio-buttons
+  input[type="radio"]:checked:nth-of-type(5)
+  ~ .alignementBoutonCentre
+  label:nth-of-type(5),
+.radio-buttons
+  input[type="radio"]:checked:nth-of-type(6)
+  ~ .alignementBoutonCentre
+  label:nth-of-type(6) {
+  background-color: var(--CouleurFondBulle);
+  color: white;
 }
-
 
 /*pour aligné une image et un texte dans le carousel*/
 .carousel-item-content {
-    display: flex; /* Permet d'aligner l'image et le texte en ligne */
-    align-items: center; /* Centre verticalement */
-    justify-content: space-between; /* Espacement entre image et texte */
-    gap: 20px; /* Espace entre l'image et le texte */
-    text-align: justify; /* Justifier le texte */
+  display: flex; /* Permet d'aligner l'image et le texte en ligne */
+  align-items: center; /* Centre verticalement */
+  justify-content: space-between; /* Espacement entre image et texte */
+  gap: 20px; /* Espace entre l'image et le texte */
+  text-align: justify; /* Justifier le texte */
 }
 
 .carousel-item img {
-    width: 25%; /* Taille de l'image */
-    height: auto;
-    border-radius: 10px; /* Coins arrondis (optionnel) */
-    margin-bottom: 5px;
+  width: 25%; /* Taille de l'image */
+  height: auto;
+  border-radius: 10px; /* Coins arrondis (optionnel) */
+  margin-bottom: 5px;
 }
 .carousel-item p {
-    flex: 1; /* Permet au texte de prendre tout l'espace restant */
+  flex: 1; /* Permet au texte de prendre tout l'espace restant */
 }
 
-
 .centered-images {
-    display: flex;
-    justify-content: center; /* Centre les images horizontalement */
-    gap: 15px; /* Ajoute un espace entre les images */
-    margin-top: 10px; /* Espace avec le texte */
+  display: flex;
+  justify-content: center; /* Centre les images horizontalement */
+  gap: 15px; /* Ajoute un espace entre les images */
+  margin-top: 10px; /* Espace avec le texte */
+}
+
+/*pour mettre la citation au centre */
+.fh5co-cover .Citation {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px; /* Espace entre la citation et le texte suivant */
+  color: var(--CouleurVive);
+  font-style: italic; /* Italique pour la citation */
+  max-width: 700px;
+  display: inline-block;
+  color: white;
+}
+
+.Citation .codeCitation {
+  color: var(--CouleurRouge);
+  transition: transform 0.5s;
+  display: inline-block; /* Ajouté pour s'assurer que transform fonctionne */
+}
+
+.codeCitation:hover {
+  transform: scale(1.2); /* Correction ici */
 }
