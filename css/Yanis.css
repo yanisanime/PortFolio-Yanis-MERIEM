@@ -2,6 +2,7 @@
 :root {
   --CouleurVive: #3073e2;
   --CouleurFondBulle: #3073e2;
+  --CouleurPourDégradeCompetence: #355891;
   --CouleurGris: rgba(19, 23, 24, 0.9);
   /* --HeaderBackground: rgba(42, 54, 59, 0.9); */
   --HeaderBackgroundImage: url("../images/background/fond.png");
@@ -307,99 +308,83 @@ item-list ul {
 }
 
 /*pour les icone de la page d'accueil*/
-.competence {
-  background-color: var(--CouleurFondBulle);
-  color: white;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 15px;
-  text-align: center;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.competenceColonne {
+  display: grid;
+  gap: 30px;
+
   justify-content: center;
-  transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: visible; /* Permet de voir la description sans affecter les autres */
+  margin-top: 50px;
+}
+.competenceLigne {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espace entre les colonnes */
+  margin-bottom: 50px; /* Espace entre les lignes */
 }
 
-.competence .icon {
-  font-size: 50px; /* Augmentation de la taille de l'icône */
-  margin-bottom: 15px; /* Augmentation de la marge inférieure */
+.competence {
+  background: var(--CouleurFondBulle);
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px; /* Largeur maximale pour chaque compétence */
+  height: 150px; /* Hauteur fixe pour chaque compétence */
+}
+
+.competence h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
 }
 
 .competence:hover {
   transform: scale(1.1);
-  z-index: 10;
-  background-color: var(--CouleurFondBulle);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.competence .icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+  color: var(--CouleurRouge); /* Couleur icône */
 }
 
 .competence-description {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%; /* Set width to 100% to match the parent competence */
-  background-color: var(--CouleurFondBulle);
-  color: rgb(0, 0, 0);
-  padding: 15px; /*hauteur de la box*/
-  min-height: 170px;
-  border-radius: 10px;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-  opacity: 0;
-  visibility: hidden;
+  bottom: -100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  transition: bottom 0.3s ease-in-out;
   text-align: left;
-  /*changer la taille du texte en plus petit*/
-  font-size: 15px;
+  font-size: 14px;
+  width: 300px;
+  height: 150px;
 }
 
 .competence:hover .competence-description {
-  opacity: 1;
-  visibility: visible;
+  bottom: 0;
 }
 
-.competence h3 {
-  margin: 0; /* Supprime la marge par défaut des h3 */
-  text-align: center; /* Assure que le texte est centré dans le conteneur */
+.competence-description p {
+  padding: 10px;
+  /* Supprimez la largeur fixe */
+  width: auto; /* Optionnel : auto est la valeur par défaut */
+  max-width: 100%; /* Assurez-vous que le texte ne dépasse pas */
+  word-wrap: break-word; /* Permet de couper les mots longs si nécessaire */
 }
 
-.competenceLigne {
-  /*pour augmenter l'espace avec ce qu'il y a au dessus*/
-  margin-top: 55px;
-  margin-bottom: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-}
-
-/*pour l'invers de hover*/
-
-.competence.color-4 {
-  background-color: #f39c12;
-  color: white;
-}
-
-.competence.color-5 {
-  background-color: #e74c3c;
-  color: white;
-}
-
-.competence.color-6 {
-  background-color: #3498db;
-  color: white;
-}
-
-.competence.color-7 {
-  background-color: #2ecc71;
-  color: white;
-}
-
-.competence.color-8 {
-  background-color: #9b59b6;
-  color: white;
+.dimentionCarteCompetence {
+  width: 400px;
 }
 
 /* Timeline Styles */
