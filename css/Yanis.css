@@ -294,6 +294,7 @@ item-list ul {
   text-align: center;
   margin-bottom: 50px;
   transition: transform 0.5s, box-shadow 0.5s; /* Ajout d'une transition pour l'état normal */
+  height: 230px;
 }
 .service .icon {
   font-size: 40px;
