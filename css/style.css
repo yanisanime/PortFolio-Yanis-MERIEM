@@ -306,7 +306,7 @@ figure {
   top: 0;
   left: 0;
   right: 0;
-    background-image: var(--HeaderBackgroundImage);
+  background-image: var(--HeaderBackgroundImage);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -321,10 +321,8 @@ figure {
   right: 0;
   bottom: 0;
 
-background-color: rgba(47, 47, 47, 0.4); /* Gris avec opacité */
-z-index: 1; /* Pour s'assurer que ce filtre soit au-dessus de l'image */
-
-
+  background-color: rgba(47, 47, 47, 0.4); /* Gris avec opacité */
+  z-index: 1; /* Pour s'assurer que ce filtre soit au-dessus de l'image */
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -1604,12 +1602,12 @@ z-index: 1; /* Pour s'assurer que ce filtre soit au-dessus de l'image */
   background: var(--CouleurFondBulle);
   color: #fff;
   border: 2px solid var(--CouleurFondBulle);
+  transition: transform 0.5s;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background: var(--CouleurFondBulle); !important;
-  border-color:var(--CouleurFondBulle); !important;
+  transform: scale(1.1);
 }
 .btn-primary.btn-outline {
   background: transparent;
