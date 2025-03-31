@@ -6,6 +6,7 @@
   /* --HeaderBackground: rgba(42, 54, 59, 0.9); */
   --HeaderBackgroundImage: url("../images/background/fond.png");
   --CouleurRouge: #bf1919;
+  --CouleurFondHeader: rgba(29, 23, 60, 0.9);
 }
 
 .paragraphe {
@@ -492,6 +493,16 @@ item-list ul {
   left: -14px;
 }
 
+.stageEntrepriseTimeline {
+  position: relative;
+  right: 50%;
+  bottom: 40%;
+}
+
+.stageEntrepriseTimelinePoint {
+  color: var(--CouleurRouge);
+}
+
 /*css pour afficher l'image de mon CV*/
 
 .CVImage {
@@ -729,6 +740,7 @@ input[type="radio"] {
   width: 30px;
   height: 30px;
   margin: 0;
+  color: var(--CouleurFondBulle);
 }
 
 .controls:hover {
@@ -897,3 +909,5 @@ input[type="radio"]:checked + label {
   ); /* Remplace cette couleur par celle que tu veux */
   font-size: 40px; /* Ajuste la taille si nécessaire */
 }
+
+/*pour mettre en valeur et plus visible les petit numéro des slides*/
