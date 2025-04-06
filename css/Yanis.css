@@ -294,7 +294,7 @@ item-list ul {
   text-align: center;
   margin-bottom: 50px;
   transition: transform 0.5s, box-shadow 0.5s; /* Ajout d'une transition pour l'état normal */
-  height: 230px;
+  height: 250px;
 }
 .service .icon {
   font-size: 40px;
@@ -386,6 +386,23 @@ item-list ul {
 
 .dimentionCarteCompetence {
   width: 400px;
+}
+
+.tags {
+  color: black;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tags span {
+  color: black;
+
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
 }
 
 /* Timeline Styles */
@@ -881,6 +898,7 @@ input[type="radio"]:checked + label {
   font-weight: bold;
   color: #333;
   margin-top: 20px;
+  height: 50px;
 }
 
 #fh5co-services .service p {
